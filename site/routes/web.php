@@ -19,4 +19,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/test' , function(){
+    return view('test');
+});
+
 URL::forceScheme('https');
