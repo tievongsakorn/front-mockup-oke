@@ -1,0 +1,76 @@
+version: '3'
+networks:
+    main:
+        driver: bridge
+
+services:
+    mockupoka_proxy:
+        image: nginx:1.15-alpine
+        networks:
+            main:
+                aliases:
+                    - mockupoka.test
+        ports:
+            - 8080:80
+            - 443:443
+        volumes:
+            - "./config/proxy.conf:/etc/nginx/conf.d/default.conf"
+            - "./config/ssl:/etc/nginx/ssl"
+        depends_on:
+            - mockupoka_nginx
+
+    mockupoka_nginx:
+        image: nginx:1.15-alpine
+        networks:
+            - main
+        volumes:
+            - "./site:/var/www/html"
+            - "./config/nginx.conf:/etc/nginx/conf.d/default.conf"
+        depends_on:
+            - mockupoka_fpm
+
+    mockupoka_fpm:
+        build:
+            context: .
+            dockerfile: dockerfiles/fpm-dev.dockerfile
+        networks:
+            - main
+        volumes:
+            - "./site:/var/www/html"
+            - "./config/php.ini:/usr/local/etc/php/php.ini"
+        depends_on:
+            - mockupoka_db
+
+    mockupoka_db:
+        image: mariadb:10.1
+        networks:
+            - main
+        ports:
+           - 3306:3306
+        volumes:
+            - "dbmockupoka:/var/lib/mysql"
+        environment:
+            MYSQL_ROOT_PASSWORD: rootpw
+            MYSQL_DATABASE: mockupoka
+            MYSQL_USER: mockupoka
+            MYSQL_PASSWORD: mockupokapw
+
+    mockupoka_redis:
+        image: redis:3.2-alpine
+        networks:
+            - main
+
+    phpmyadmin_db:
+       image: phpmyadmin/phpmyadmin
+       networks:
+           - main
+       ports:
+           - 8041:80
+       environment:
+           MYSQL_ROOT_PASSWORD: rootpw
+           PMA_HOST: db
+       depends_on:
+           - mockupoka_db
+
+volumes:
+    dbmockupoka:

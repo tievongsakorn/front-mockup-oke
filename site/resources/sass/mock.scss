@@ -1,0 +1,119 @@
+
+$blue-col : #6ce9ff ;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+}
+.nonbts__container {
+    padding-left: 70px;
+    .row {
+        padding-left: 25px;
+        padding-top: 20px;
+        
+        .col {
+            img{
+                border: 3px solid white;
+            }
+        }
+    }
+}
+.topnav {
+    top: 0;
+    height: 75px;
+    background-color: $blue-col;
+    position:relative;
+    #form__search {
+        background-image: url('/imgs/zoom.svg');
+        padding-left: 50px;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: 13px;
+    }
+    .form__search {
+        padding-top: 1em;
+        input[type=text]{
+            height: 3em;
+            width: 45vh;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            resize: vertical;
+          }
+    }
+    
+}
+.sidenav {
+    height: 100%;
+    width: wrap;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $blue-col ;
+    overflow-x: hidden;
+    transition: 0.5s;
+    .toggle-btn {
+        position: absolute;
+        left: 230px;
+        top: 20px;
+        span{
+            display: block;
+            width: 30px;
+            height: 5px;
+            background: #151719;
+            margin: 5px 0px;
+           }   
+    }
+    .icon-bar {
+        width: 70px;
+        background-color: $blue-col;
+      }
+      
+      .icon-bar a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 36px;
+      }
+      
+      .icon-bar a:hover {
+        opacity: 0.5;
+      }
+        
+}
+#carousel3d {
+    .carousel-3d-slide {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        text-align: center;
+        background-color: #fff;
+        -webkit-transition: all .6s;
+        transition: all .4s;
+        border-radius: 30px;
+      }
+        .carousel-3d-slide.current {
+        background-color: #333;
+        color: #fff;
+      }
+        .carousel-3d-slide.current span {
+        font-size: 20px;
+        font-weight: 500;
+      }
+}
+
