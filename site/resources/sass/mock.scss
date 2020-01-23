@@ -1,25 +1,62 @@
 
 @import url('https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,700,800,900&display=swap');
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
+@import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css';
+
+@font-face {
+    font-family: Main_Font ;
+    font-weight: 600;
+    src: url("css/font/SukhumvitSet-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: Main_Font ;
+    font-weight: 500;
+    src: url("css/font/SukhumvitSet-SemiBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: Main_Font ;
+    font-weight: 400;
+    src: url("css/font/SukhumvitSet-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: Main_Font ;
+    font-weight: 300;
+    src: url("css/font/SukhumvitSet-Light.ttf") format('truetype');
+}
+@font-face {
+    font-family: Main_Font ;
+    font-weight: 200;
+    src: url("css/font/SukhumvitSet-Thin.ttf") format('truetype');
+}
+
+
 
 $blue-col : #0dd4fb ;
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Kanit', sans-serif;
+    font-family: Main_Font;
 }
 html {
     box-sizing: border-box;
 }
 body{
     background-color: #e0edf5;
+    background-image: url('/imgs/main__bg.jpg');
+    background-repeat: no-repeat;
 }
+#navspace {
+    transition: all 0.6s ease;
+    position: relative;
+}
+//คอนเทนเนอร์หลัก
 .nonbts__container {
-    padding-left: 70px;
+    width: 100%;
+    padding-left: 0;
     .row {
         padding-left: 25px;
         padding-top: 20px;
-        
         .col {
             img{
                 border: 3px solid white;
@@ -27,15 +64,25 @@ body{
         }
     }
 }
+//เมนูบาร์ด้านบน
 .topnav {
     top: 0;
     width: 100%;
     height: 75px;
     background-color: $blue-col;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
+    img {
+        width : 100px;
+        position: absolute;
+        margin-top: 0em;
+        margin-left: 5em;
+        top: 48%;
+        left: 55px;
+        transform: translate(-50%, -50%);
+    }
     #form__search {
-        background-image: url('/imgs/zoom.svg');
+        background-image: url('/imgs/zoom.png');
         padding-left: 50px;
         background-size: 25px;
         background-repeat: no-repeat;
@@ -44,57 +91,48 @@ body{
     .form__search {
         padding-top: 1em;
         input[type=text]{
-            height: 3em;
-            width: 45vh;
+            height: 2.5em;
+            width: 25vw;
             border: 1px solid #ccc;
             border-radius: 20px;
             resize: vertical;
           }
     }
-    
+    .login-bt {
+        width: 2em;
+        height: 10px;
+        border-radius: 20px;
+    }
 }
-.login-bt {
-    width: 2em;
-    height: 10px;
-}
+
+//เมนูบาร์ด้านข้าง
 .sidenav {
     height: 100%;
-    width: wrap;
+    width: 0;
     position: fixed;
-    z-index: 1;
-    top: 0px;
-    left: 0;
-    background-color: $blue-col ;
-    overflow-x: hidden;
-    transition: 0.5s;
-    // -webkit-box-shadow: 2px 0px 14px 0px rgba(0,0,0,0.18);
-    // -moz-box-shadow: 2px 0px 14px 0px rgba(0,0,0,0.18);
-    // box-shadow: 2px 0px 14px 0px rgba(0,0,0,0.18);
-    .toggle-btn {
-        position: absolute;
-        left: 230px;
-        top: 20px;
-        span{
-            display: block;
-            width: 30px;
-            height: 5px;
-            background: #151719;
-            margin: 5px 0px;
-           }   
+    z-index: 10;
+    background-color: $blue-col;
+    transition: 0.6s;
+    #icon__bar { 
+        visibility: hidden;
+        opacity: 0;
+        // transition: opacity 0.4s;
     }
-    .icon-bar {
+    .icon__bar {
         width: 70px;
-        background-color: $blue-col;
-        margin: 2px;
+        img {
+            position: relative;
+            left: 0;
+        }
         a {
             display: block;
             text-align: center;
-            padding: 16px;
-            transition: all 0.3s ease;
+            text-decoration: none;
+            padding: 1.5px;
+            transition: all 0.6s ease;
             color: white;
             font-size: 36px;
           }
-          
          a:hover {
             opacity: 0.5;
           }
@@ -102,76 +140,95 @@ body{
             font-size: 10px;
         }
       }
-      
-      
-        
-}
-#carousel3d {
-    .carousel-3d-slide {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-flex: 1;
-            -ms-flex: 1;
-                flex: 1;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        text-align: center;
-        background-color: #fff;
-        -webkit-transition: all .6s;
-        transition: all .4s;
-        border-radius: 30px;
-      }
-        .carousel-3d-slide.current {
-        background-color: #333;
-        color: #fff;
-      }
-        .carousel-3d-slide.current span {
-        font-size: 20px;
-        font-weight: 500;
+      .icon__bar--btn {
+        z-index: 10;
+        width: 65px;
+        padding-top: 0.4em;
+        img {
+            position: relative;
+            left: 0;
+        }
+        span {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding: 9px;
+            transition: all 0.3s;
+            color: white;
+            font-size: 36px;
+          }
+        span:hover {
+            opacity: 0.7;
+          }
+        p {
+            font-size: 10px;
+        }
       }
 }
-.slider {
-    height: 350px;
+#corousal__top {
+    padding-top: 90px;
 }
-.art__slide {
-    margin-right: 75px;
-    padding-top: 1em;
-    // border: 1px solid black;
-    // border-radius: 50%;
-    // width: 180px;
-    // height: 180px;
-    // i {
-    //     z-index: 1;
-    //     border: white 3px solid;
-    //     border-radius: 50%;
-    // }
-   
+#slide-title {
+    padding-left: 1em;
+    font-weight: 600;
+}
+
+.item {
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    z-index: 1;
     img {
+        height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+.owl-item.active.center {
+    transform: scale(1) !important;
+    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
+    filter:grayscale(0);
+  }
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:active span {
+    width: 30px;
+    transition: 0.3s ease;
+} 
+
+.owl-item {
+    // transform: scale(.8);
+    transform: scale(0.9) !important;
+    transition: .6s ease;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    filter: opacity(50%);
+}
+//ส่วนสไลด์ของศิลปิน
+.art__slide {
+    margin-right: 70px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    img {
+        width: auto;
+        height: 100px;
+    }
+    .img__circle {
+        object-fit: cover;
+        z-index: 6;
         width: 170px;
         height: 170px;
         border: 4px solid white;
         overflow: hidden;
         border-radius: 50%;
-        // border: 2px solid white;
-        // display: inline-block;
-        // position: relative;
-        // width: 170px;
-        // height: 170px;
-        // overflow: hidden;
-        // border-radius: 50%;
     }
     h5{
+
         font-weight: 300;
         color: #333;
         padding-top: 1em;
         text-align: center;
-        font-size: 17px;
+        font-size: 20px;
     }
     h6 {
         font-weight: 300;
@@ -179,13 +236,15 @@ body{
         color: #333;
     }
 }
+//ส่วนสไลด์ของเพลงมาใหม่
 .newsong_slide {
     @extend .art__slide ;
-    margin-right: 10px;
+    margin-right: 15px;
     img {
         width: 240px;
         height: 150px;
-        border-radius: 10px;
+        border: 4px white solid;
+        border-radius: 25px;
     }
     h5 {
         font-weight: 400;
@@ -195,27 +254,48 @@ body{
         text-align: left;
     }
 }
-
+//ส่วนสไลด์ของเพลย์ลิสต์
 .playli_slide {
     @extend .art__slide ;
-    margin-right: 10px;
+    margin-right: 15px;
     img {
         width: 240px;
         height: 240px;
+        border: 4px white solid;
         border-radius: 15px;
     }
     h5 {
         font-weight: 400;
-        font-size: 18px;
+        font-size: 20px;
         text-align: left;
     }
     .icon {
-        top: 70%;
-        
+        top: 65%; 
     }
 }
-
-
+//ส่วนสไลด์ของเพลงมาใหม่
+.recom_slide {
+    @extend .art__slide ;
+    margin-right: 15px;
+    img {
+        width: 240px;
+        height: 150px;
+        border: 4px white solid;
+        border-radius: 25px;
+    }
+    h5 {
+        font-weight: 400;
+        text-align: left;
+    }
+    h6 {
+        text-align: left;
+    }
+}
+//ไว้กำหนดระยะห่างลูกตัวแลกของสไลด์
+#first-slide {
+    padding-left: 3em ;
+}
+//โอเวอร์เลยรูปในสไดล์เพื่อใส่ปุ่มเล่น
 .overlay {
     position: absolute;
     top: 0;
@@ -224,25 +304,259 @@ body{
     right: 0;
     height: 100%;
     width: 100%;
-    transition: .3s ease;
+    transition: all .3s ease;
+    border: none;
   }
-  //ปุ่มเล่น
+  //ตัวปุ่มเล่น
   .icon {
-    color: white;
-    font-size: 50px;
     position: absolute;
     top: 50%;
-    left: 80%;
+    left: 85%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    img {
+        border: none;
+        height: 50px;
+        width: 50px;
+    }
   }
   .icon:hover {
-  color: $blue-col;
+  img {
+      transition: all 0.1s;
+      height: 55px;
+      width: 55px;
+  }
 }
+//ฟููตเตอร์หลัก
 .footer {
     margin-top: 4em;
     border-top: 1px solid rgba(4,4,4,0.3);
-    height: 3em;
+    padding-bottom: 1em;
+    h3 {
+        font-weight: 200;
+    }
+    .contact {
+        text-align: right;
+        padding-right: 1em;
+        li {
+            list-style: none;
+            display: inline;
+        }
+        a {
+            padding: 1em;
+            text-decoration: none;
+            color: black;
+            font-weight: 200;
+        }
+        h4 {
+            padding-top: 2em;
+            font-weight: 200;
+        }
+        i {
+            padding-top: 0;
+            font-size: 30px;
+        }
+    }
+}
+//ส่วนบาร์CoppyRightล่างสุดของเว็บ
+.footer__copyright {
+    border-top: 1px solid rgba(4,4,4,0.3);
+    background-color: #006afe;
+    height: 65px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
 }
 
+// <-----------------------------จอขนาดกลาง----------------------------->
+
+@media (max-width: 1200px) { 
+    .topnav {
+        img {
+            width : 95px;
+        }
+        .form__search {
+            margin-top: 2px;
+            input[type=text]{
+                width: 35vw;
+                transition: width 0.2s;
+              }
+        }
+    }
+    .sidenav {
+        .icon__bar--btn {
+            padding-top: 5px;
+        }
+    }
+    .item {
+        height: 20vh;
+    }
+    .footer__copyright {
+        height: 10vh;
+    }
+    .newsong_slide {
+        margin-right: 32px;
+    }
+    .playli_slide {
+        margin-right: 32px;
+    }
+    .recom_slide {
+        margin-right: 32px;
+    }
+    #first-slide {
+        padding-left: 1em;
+    }
+    #slide-title {
+        padding-left: 0.5em;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 2px;
+    }
+    .footer {
+        .row {
+            padding-left:0;
+        }
+        img {
+            width: 30%;
+        }
+        .contact {
+            padding-right: 0px;
+            a {
+                padding: 1px;
+            }
+        }
+    }
+}
+// <-----------------------------จอขนาดเล็ก----------------------------->
+
+@media (max-width: 575.98px) { 
+    .topnav {
+        height: 70px;
+        img {
+            top:50%;
+            width : 20%;
+            margin-left: 55px;
+        }
+        .form__search {
+            text-align: right;
+            padding-right: 1em;
+            padding-top: 1.2rem;
+            input[type=text]{
+                height: 2em;
+                width: 5vw;
+                transition: width 0.2s;
+              }
+            input[type=text]:focus {
+                z-index: 999;
+                width :55% ;
+                transition: width 0.3s;
+            }
+        }
+        #form__search {
+            padding-left: 30px;
+            background-position: 4px;
+        }
+    }
+    #corousal__top {
+        padding-top: 75px;
+    }
+    .item {
+        height: 170px;
+        border-radius: 15px;
+    }
+    #slide-title {
+        font-size: 26px;
+    }
+    .art__slide {
+        margin-right: 60px;
+        padding-top: 1em;
+        img {
+            height: 80px;
+        }
+        .img__circle {
+            width: 135px;
+            height: 135px;
+        }
+        h5 {
+            inline-size: auto;
+        }
+    }
+    .newsong_slide {
+        margin-right: 10vw;
+        img {
+            width: 200px;
+            height: 110px;
+        }
+    }
+    .playli_slide {
+        margin-right: 10vw;
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .recom_slide {
+        margin-right: 10vw;
+        img {
+            width: 200px;
+            height: 110px;
+        }
+    }
+    .sidenav {
+        .icon__bar--btn {
+            padding-top: 4px;
+        }
+        .icon__bar {
+            width: 55px
+        }
+    }
+    .icon {
+        position: absolute;
+        top: 43%;
+        left: 86%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        img {
+            border: none;
+            height: 35px;
+            width: 35px;
+        }    
+      }
+      .icon:hover {
+        img {
+            transition: all 0.1s;
+            height: 38px;
+            width: 38px;
+        }
+    }
+    .footer__copyright {
+        height: 18vh;
+    }
+    .footer {
+        #dl_pic {
+            width: 48%;
+        }
+        img {
+            width: 60%;
+        }
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+        .contact {
+            li {
+                display: block;
+            }
+        }
+    }
+}
