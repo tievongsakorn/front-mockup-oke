@@ -41,5 +41,11 @@
       <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
       <script src="{{ mix('js/app.js') }}"></script>
 
+
+      <input class="login-bt" type="button" value="เข้าสู่ระบบ">
+      <input class="regis-bt" type="button" value="สมัครสมาชิก">
 </body>
+<style>
+
+</style>
 </html>

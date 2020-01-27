@@ -12,70 +12,35 @@
 </head>
 <body>
     <div class="topnav">
-        {{-- <div class="row"> --}}
-            {{-- <div class="col-4"> --}}
-                <img src="/imgs/t_logo.png">
-            {{-- </div> --}}
-            {{-- <div class="col-4"> --}}
+                <img id="logo_img"src="/imgs/t_logo.png">
                 <div style="text-align:center;">
                     <form class="form__search" action="">
                         <input type="text" id="form__search" placeholder="ค้นหาเพลง ศิลปิน อัลบัม และเพลย์ลิสต์">
                     </form>
                 </div>
-            {{-- </div> --}}
-            {{-- <div class="col-4"> --}}
-                {{-- <div class="login-bt">
-                    <button>LOGIN</button>
-                </div> --}}
-            {{-- </div> --}}
-        {{-- </div> --}}
-             
-            
-        
+            <div id="button">
+                <button class="login-bt">เข้าสู่ระบบ</button>
+                <button class="regis-bt">สมัครสมาชิก</button>
+            </div>
     </div>
     <div id="mySidenav" class="sidenav" style="width: 0px;">
         <div class="icon__bar--btn">
             <span style="font-size:30px;cursor:pointer ;" onclick="navbutton()">&#9776;</span>
         </div>
-        <div class="icon__bar" id="icon__bar">
-            {{-- <a href=""><span style="font-size:30px;cursor:pointer ;" onclick="closeNav()">&#9776;</span></a> --}}
-            <a href="#"><img src="/icon/icon-home.png"><p>หน้าแรก</p></a>
-            <a href="#"><img src="/icon/icon-mice.png"><p>คาราโอเกะ</p></a> 
-            <a href="#"><img src="/icon/icon-m_his.png"><p>เพลงที่ร้องล่าสุด</p></a>
-            <a href="#"><img src="/icon/icon-pro.png"></i><p>โปรไฟล์</p></a>
+        <div class="icon__bar" id="icon__bar" style="visibility: hidden;">  
+            <img id="logo_img--mobile"src="/imgs/t_logo.png">
+            <a href="#"><img src="/icon/icon-home.png"><p>หน้าแรก</p><span></span></a>
+            <a href="#"><img src="/icon/icon-mice.png"><p>คาราโอเกะ</p><span></span></a> 
+            <a href="#"><img src="/icon/icon-m_his.png"><p>เพลงที่ร้องล่าสุด</p><span></span></a>
+            <a href="#" style="padding-bottom : 0.5em"><img src="/icon/icon-pro.png"><p>โปรไฟล์</p><span></span></a>
+            <div class="sm-scn-login">
+                <a href="#"><img src="/icon/icon-login.png" id="sm-scn-login" style="height: 50px; padding-left :16px"><p>เข้าสู่ระบบ</p><span></span></a>
+                <a href="#"><img src="/icon/icon-regis.png" id="sm-scn-login" style="height: 55px;"><p>สมัครสมาชิก</p><span></span></a>
+            </div>
+
         </div>
     </div>
-<div id="navspace">
-    {{-- <div class="nonbts__container" style="padding-top:7vh">
-        <div id="carousel3d">
-            <carousel-3d :perspective="0" :space="730" width="600em" :display="5" :controls-visible="false" :clickable="true" :autoplay="false" :autoplay-timeout="5000">
-                <slide :index="0">
-                        <img  src="/playli/6.jpg">
-                </slide>
-                <slide :index="1">
-                        <img src="/playli/1.jpg">
-                </slide>
-                <slide :index="2">
-                        <img src="/playli/2.jpg">
-                </slide>
-                <slide :index="3">
-                        <img src="/playli/3.jpg">
-                </slide>
-                <slide :index="4">
-                        <img src="/playli/4.jpg">
-                </slide>
-                <slide :index="5">
-                        <img src="/playli/5.jpg">
-                </slide>
-                <slide :index="6">
-                        <img src="/playli/6.jpg">
-                </slide>
-                <slide :index="7">
-                        <img src="/playli/7.jpg">
-                </slide>
-            </carousel-3d>
-        </div>
-</div> --}}
+<div id="navspace" style="padding-left: 0px;">
 <div class="nonbts__container" id="corousal__top">
 
     <div class="owl-carousel owl-theme">
@@ -109,10 +74,15 @@
     <h3 id="slide-title">
         ศิลปินแนะนำ
         <a href="#">
-        <img src="icon/viewmore.png" width="35px" style="padding-left:15px; padding-bottom:5px;">
+        <img src="icon/viewmore.png" width="34px" style="padding-left:15px; padding-bottom:5px;">
         </a>
     </h3>
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
+        <div class="art__slide" id="first-slide">
+            <a href="/pro"><img class="img__circle" src="artist_pic/atom.jpg"></a>
+            <h5>อะตอม ชนกันต์</h5>
+            <h6>20 Song</h6>
+        </div>
         <div class="art__slide" id="first-slide">
             <img class="img__circle" src="artist_pic/oat.jpg">
             <h5>โอ๊ต ปราโมทย์</h5>
@@ -149,11 +119,6 @@
             <h6>20 Song</h6>
         </div>
         <div class="art__slide">
-            <img class="img__circle" src="/artist_pic/palmy.jpg">
-            <h5>ปาล์มมี่</h5>
-            <h6>20 Song</h6>
-        </div>
-        <div class="art__slide">
             <img class="img__circle" src="/artist_pic/tu.jpg">
             <h5>ตู่ ภพธร</h5>
             <h6>20 Song</h6>
@@ -170,7 +135,7 @@
     <h3 id="slide-title">
         เพลงมาใหม่ 
         <a href="#">
-            <img src="icon/viewmore.png" width="35px" style="padding-left:15px; padding-bottom:5px;">
+            <img src="icon/viewmore.png" width="34px" style="padding-left:15px; padding-bottom:5px;">
         </a>
     </h3>
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
@@ -253,7 +218,7 @@
     <h3 id="slide-title">
         เพลย์ลิสต์
         <a href="#">
-            <img src="icon/viewmore.png" width="35px" style="padding-left:15px; padding-bottom:5px;">
+            <img src="icon/viewmore.png" width="34px" style="padding-left:15px; padding-bottom:5px;">
         </a>  
     </h3>
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
@@ -347,7 +312,7 @@
     <h3 id="slide-title">
         เพลงเหงาๆ วันฝนตก
         <a href="#">
-            <img src="icon/viewmore.png" width="35px" style="padding-left:15px; padding-bottom:5px;">
+            <img src="icon/viewmore.png" width="34px" style="padding-left:15px; padding-bottom:5px;">
         </a>  
     </h3>
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
@@ -429,7 +394,7 @@
     <h3 id="slide-title">
         วันหยุด สุดชิล 
         <a href="#">
-            <img src="icon/viewmore.png" width="35px" style="padding-left:15px; padding-bottom:5px;; padding-bottom:5px;">
+            <img src="icon/viewmore.png" width="34px" style="padding-left:15px; padding-bottom:5px;; padding-bottom:5px;">
         </a>
         </h3>
     <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
@@ -507,12 +472,10 @@
             <div class="col-6">
                 <img src="imgs/b_logo.png" alt="">
                 <h3>ดาวน์โหลดแอปพลิเคชั่น</h3>
-                <a href="#"><img id="dl_pic" src="/imgs/dl-ios.png" width="110px"></a>
-                <a href="#"><img id="dl_pic" src="/imgs/dl-an.png" width="110px"></a>
-                
-                
+                <a href="#"><img id="dl_pic" src="/imgs/dl-ios.png" width="140px"></a>
+                <a href="#"><img id="dl_pic" src="/imgs/dl-an.png" width="140px"></a>
             </div>
-            <div class="col-6 ">
+            <div class="col-6" style="padding-right:0;">
                     <div class="contact">
                         <ul>
                             <li><a href="#">เกี่ยวกับเรา</a></li> 
@@ -540,23 +503,13 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="{{ mix('js/app.js') }}"></script>
 <script>
-// new Vue({
-//   el: '#carousel3d',
-//   data: {
-//     slides: 7
-//   },
-//   components: {
-//     'carousel-3d': Carousel3d.Carousel3d,
-//     'slide': Carousel3d.Slide
-//   }
-// })
 function navbutton () {
     var nav = document.getElementById("icon__bar");
     var scw = window.screen.width ;
     if (nav.style.visibility == 'hidden') {
         if (scw <576) {
-            document.getElementById("mySidenav").style.width = "55px";
-            document.getElementById("navspace").style.paddingLeft = "55px";
+            document.getElementById("mySidenav").style.width = "70%";
+            document.getElementById("navspace").style.paddingLeft = "20px";
         } 
         else {
             document.getElementById("mySidenav").style.width = "70px";

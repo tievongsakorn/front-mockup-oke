@@ -36,3 +36,17 @@ body {
 .slider {
     height: 350px;
 }
+
+.login-bt {
+    border-radius: 50px ;
+    border: none;
+    background-color: #1f1bee ;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.regis-bt {
+    @extend .login-bt ;
+    background-color: #0dd4fb;
+    border: white 1px solid;
+}

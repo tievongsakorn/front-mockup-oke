@@ -1,7 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css?family=Kanit:200,300,400,500,700,800,900&display=swap');
 @import '../../node_modules/owl.carousel/dist/assets/owl.carousel.css';
 @import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css';
+
+@import 'profile' ;
 
 @font-face {
     font-family: Main_Font ;
@@ -29,8 +29,6 @@
     src: url("css/font/SukhumvitSet-Thin.ttf") format('truetype');
 }
 
-
-
 $blue-col : #0dd4fb ;
 
 *{
@@ -55,7 +53,6 @@ body{
     width: 100%;
     padding-left: 0;
     .row {
-        padding-left: 25px;
         padding-top: 20px;
         .col {
             img{
@@ -65,6 +62,15 @@ body{
     }
 }
 //เมนูบาร์ด้านบน
+#logo_img {
+    width : 95px;
+    position: absolute;
+    margin-top: 0em;
+    margin-left: 4em;
+    top: 48%;
+    left: 55px;
+    transform: translate(-50%, -50%);
+}
 .topnav {
     top: 0;
     width: 100%;
@@ -72,15 +78,6 @@ body{
     background-color: $blue-col;
     position: fixed;
     z-index: 10;
-    img {
-        width : 100px;
-        position: absolute;
-        margin-top: 0em;
-        margin-left: 5em;
-        top: 48%;
-        left: 55px;
-        transform: translate(-50%, -50%);
-    }
     #form__search {
         background-image: url('/imgs/zoom.png');
         padding-left: 50px;
@@ -96,15 +93,34 @@ body{
             border: 1px solid #ccc;
             border-radius: 20px;
             resize: vertical;
+            outline: 0;
           }
     }
-    .login-bt {
-        width: 2em;
-        height: 10px;
-        border-radius: 20px;
-    }
 }
-
+#button {
+    top: 1.3em;
+    right: 0;
+    text-align : right ;
+    position: fixed;
+    width: 33%;
+    padding-right: 15px;
+}
+.login-bt {
+    border-radius: 15px ;
+    border: none;
+    background-color: #1f1bee ;
+    color: white;
+    padding : 3px 20px 3px;
+    
+}
+.regis-bt {
+    @extend .login-bt ;
+    background-color: $blue-col;
+    border: white 1px solid;
+}
+.login-bt:focus {
+    outline: none;
+}
 //เมนูบาร์ด้านข้าง
 .sidenav {
     height: 100%;
@@ -116,7 +132,6 @@ body{
     #icon__bar { 
         visibility: hidden;
         opacity: 0;
-        // transition: opacity 0.4s;
     }
     .icon__bar {
         width: 70px;
@@ -129,7 +144,7 @@ body{
             text-align: center;
             text-decoration: none;
             padding: 1.5px;
-            transition: all 0.6s ease;
+            transition: all 0.1s ease;
             color: white;
             font-size: 36px;
           }
@@ -137,7 +152,7 @@ body{
             opacity: 0.5;
           }
         p {
-            font-size: 10px;
+            font-size: 11px;
         }
       }
       .icon__bar--btn {
@@ -165,6 +180,13 @@ body{
         }
       }
 }
+.sm-scn-login {
+    visibility: hidden;
+}
+#logo_img--mobile {
+    display: none;
+}
+
 #corousal__top {
     padding-top: 90px;
 }
@@ -187,21 +209,25 @@ body{
 
 .owl-item.active.center {
     transform: scale(1) !important;
-    -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
     filter:grayscale(0);
   }
-
+.owl-dots:active {
+    outline: 0;
+}
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:active span {
-    width: 30px;
-    transition: 0.3s ease;
+    width: 2.5rem;
+    height: 8px;
+    transition: 0.5s;
+    background-color: #1f1bee ;
+    outline: 0;
 } 
+.owl-theme .owl-dots .owl-dot:active span:focus {
+    outline: none;
+}
 
 .owl-item {
-    // transform: scale(.8);
     transform: scale(0.9) !important;
     transition: .6s ease;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
     filter: opacity(50%);
 }
 //ส่วนสไลด์ของศิลปิน
@@ -221,6 +247,7 @@ body{
         border: 4px solid white;
         overflow: hidden;
         border-radius: 50%;
+        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
     }
     h5{
 
@@ -245,6 +272,7 @@ body{
         height: 150px;
         border: 4px white solid;
         border-radius: 25px;
+        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
     }
     h5 {
         font-weight: 400;
@@ -263,6 +291,7 @@ body{
         height: 240px;
         border: 4px white solid;
         border-radius: 15px;
+        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
     }
     h5 {
         font-weight: 400;
@@ -282,6 +311,7 @@ body{
         height: 150px;
         border: 4px white solid;
         border-radius: 25px;
+        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
     }
     h5 {
         font-weight: 400;
@@ -291,6 +321,7 @@ body{
         text-align: left;
     }
 }
+//สไลด์เพลงของศิลปิน 
 //ไว้กำหนดระยะห่างลูกตัวแลกของสไลด์
 #first-slide {
     padding-left: 3em ;
@@ -306,6 +337,7 @@ body{
     width: 100%;
     transition: all .3s ease;
     border: none;
+    overflow: hidden;
   }
   //ตัวปุ่มเล่น
   .icon {
@@ -330,15 +362,18 @@ body{
 }
 //ฟููตเตอร์หลัก
 .footer {
+    width: 98%;
+    margin-left: 1%;
     margin-top: 4em;
     border-top: 1px solid rgba(4,4,4,0.3);
-    padding-bottom: 1em;
+    img {
+        padding-bottom: 1em;
+    }
     h3 {
-        font-weight: 200;
+        font-weight: 300;
     }
     .contact {
         text-align: right;
-        padding-right: 1em;
         li {
             list-style: none;
             display: inline;
@@ -347,7 +382,7 @@ body{
             padding: 1em;
             text-decoration: none;
             color: black;
-            font-weight: 200;
+            font-weight: 400;
         }
         h4 {
             padding-top: 2em;
@@ -363,7 +398,7 @@ body{
 .footer__copyright {
     border-top: 1px solid rgba(4,4,4,0.3);
     background-color: #006afe;
-    height: 65px;
+    height: 4rem;
     text-align: center;
     position: relative;
     z-index: 3;
@@ -381,16 +416,16 @@ body{
 
 @media (max-width: 1200px) { 
     .topnav {
-        img {
-            width : 95px;
-        }
         .form__search {
             margin-top: 2px;
             input[type=text]{
-                width: 35vw;
+                width: 32vw;
                 transition: width 0.2s;
               }
         }
+    }
+    #logo_img {
+        width : 95px;
     }
     .sidenav {
         .icon__bar--btn {
@@ -438,33 +473,43 @@ body{
 }
 // <-----------------------------จอขนาดเล็ก----------------------------->
 
-@media (max-width: 575.98px) { 
+@media (max-width: 740px) { 
     .topnav {
         height: 70px;
-        img {
-            top:50%;
-            width : 20%;
-            margin-left: 55px;
-        }
+        
         .form__search {
             text-align: right;
             padding-right: 1em;
-            padding-top: 1.2rem;
+            padding-top: 1rem;
             input[type=text]{
+                z-index: 16;
                 height: 2em;
-                width: 5vw;
+                width: 30px;
                 transition: width 0.2s;
               }
             input[type=text]:focus {
-                z-index: 999;
+                z-index: 16;
                 width :55% ;
                 transition: width 0.3s;
+                outline: 0;
             }
         }
         #form__search {
             padding-left: 30px;
             background-position: 4px;
         }
+    }
+    #logo_img {
+        top:48%;
+        width : 20%;
+        margin-left: 55px;
+    }
+    #logo_img--mobile {
+        display: block;
+        width : 90px;
+        position: absolute;
+        top: 10px;
+        left: 70px;
     }
     #corousal__top {
         padding-top: 75px;
@@ -477,7 +522,7 @@ body{
         font-size: 26px;
     }
     .art__slide {
-        margin-right: 60px;
+        margin-right: 50px;
         padding-top: 1em;
         img {
             height: 80px;
@@ -486,29 +531,31 @@ body{
             width: 135px;
             height: 135px;
         }
-        h5 {
-            inline-size: auto;
-        }
+        // h5 {
+        //     inline-size: auto;
+        // }
     }
     .newsong_slide {
-        margin-right: 10vw;
+        margin-right: 1rem;
         img {
             width: 200px;
             height: 110px;
+            border-radius: 15px;
         }
     }
     .playli_slide {
-        margin-right: 10vw;
+        margin-right: 1rem;
         img {
             width: 200px;
             height: 200px;
         }
     }
     .recom_slide {
-        margin-right: 10vw;
+        margin-right: 1rem;
         img {
             width: 200px;
             height: 110px;
+            border-radius: 15px;
         }
     }
     .sidenav {
@@ -516,8 +563,39 @@ body{
             padding-top: 4px;
         }
         .icon__bar {
-            width: 55px
+            width: 100% ;
+            img {
+                padding: 10px;
+                align-items: center;
+            }
+            a {
+                display: inline;
+                text-align: left ;
+                padding-left: 0.5em;
+                padding: 0;
+            }
+            p {
+                display: inline;
+                padding: 10px;
+                font-size: 16px;
+            }
+            span {
+                display: block;
+                padding-right: 3px;
+            }
         }
+    }
+    .sm-scn-login {
+        visibility: visible;
+        width: 90%;
+        border-top: 1px rgb(255, 255, 255 , 0.5) solid;
+        border-bottom: 1px rgb(255, 255, 255 , 0.5) solid; ;
+        padding-top: 0;
+        margin-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    #button {
+        visibility: hidden;
     }
     .icon {
         position: absolute;
@@ -540,7 +618,7 @@ body{
         }
     }
     .footer__copyright {
-        height: 18vh;
+        height: 8rem;
     }
     .footer {
         #dl_pic {

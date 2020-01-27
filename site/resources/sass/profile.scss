@@ -1,0 +1,118 @@
+.blur__bg {
+    background-color: white;
+    filter: blur(25px);
+    opacity: 0.6;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    .img-box {
+        height: 100%;
+        width: 70%;
+        transform: translate(-45%, 0%);
+        overflow: hidden;
+        object-fit: cover;
+        position: absolute;
+        img {
+            height: 120%;
+            width: 120%;          
+        }
+    }
+    
+}
+
+.pro__pic__box {
+    display: inline-block;
+    vertical-align: middle;
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 15;
+    object-fit: cover;
+    img {
+        transform: translate(-30%, 0%);
+        width: auto;
+        height: 150%;
+    }
+}
+.art__detail {
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        width: 90%;
+        padding-top: 1em;
+        font-size: 20px;
+    }
+}
+.art__song {
+        margin-right: 25px;
+        padding-top: 1em;
+        padding-bottom: 1em;     
+        img {
+            width: 265px;
+            height: 175px;
+            border: 4px white solid;
+            border-radius: 25px;
+            box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        }
+        h5{
+            font-weight: 300;
+            color: #333;
+            padding-top: 1em;
+            text-align: left;
+            font-size: 20px;
+        }
+        h6 {
+            font-weight: 300;
+            text-align: left;
+            color: #333;
+        }
+
+}
+#all_song {
+    padding-top : 10em ;
+}
+//------------------------------โหมจอขนาดกลาง-------------------------------------
+@media (max-width: 1200px) {
+    .blur__bg {
+        .img-box {
+            max-height: 100%;
+            max-width: 100%;
+            transform: translate(0%, 0%);
+            img {
+                height: 100%;
+                width: 100%;          
+            }
+        }
+    }
+    .art__detail {
+        h1 {
+            padding-top: 1em;
+        }
+        p {
+            width: 100%;
+        }
+    }
+    #all_song {
+        padding-top : 5em ;
+    }
+    .pro__pic__box {
+        height: auto;
+        width: auto;
+        max-height: 250px;
+        max-width: 250px;
+        margin-left: 0px;
+        display: inline-block;
+        vertical-align: middle;
+        img {
+            transform: translate(-30%, 0%);
+            width: auto;
+            height: 350px;
+        }
+    }
+}

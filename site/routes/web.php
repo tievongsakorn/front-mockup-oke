@@ -15,12 +15,20 @@
 //     return view('welcome');
 // });
 
+Route::get('/oldmain', function () {
+    return view('pages.index');
+});
+
+Route::get('/pro', function () {
+    return view('pages.profile');
+});
+
 Route::get('/', function () {
-    return view('index');
+    return view('pages.home');
 });
 
 Route::get('/test' , function(){
-    return view('test');
+    return view('pages.test');
 });
 
 URL::forceScheme('https');
