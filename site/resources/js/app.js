@@ -6,7 +6,7 @@ import 'owl.carousel';
 $('.owl-carousel').owlCarousel({
     stagePadding: 100,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3500,
     dots: true,
     loop:true,
     margin:10,

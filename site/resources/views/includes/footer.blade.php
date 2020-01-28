@@ -9,7 +9,7 @@
                 <a href="#"><img id="dl_pic" src="/imgs/dl-ios.png" width="140px"></a>
                 <a href="#"><img id="dl_pic" src="/imgs/dl-an.png" width="140px"></a>
             </div>
-            <div class="col-6" style="padding-right:0;">
+            <div class="col-6" style="padding-right:15px;">
                     <div class="contact">
                         <ul>
                             <li><a href="#">เกี่ยวกับเรา</a></li> 

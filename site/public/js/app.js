@@ -34073,7 +34073,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 $('.owl-carousel').owlCarousel({
   stagePadding: 100,
   autoplay: true,
-  autoplayTimeout: 5000,
+  autoplayTimeout: 3500,
   dots: true,
   loop: true,
   margin: 10,
