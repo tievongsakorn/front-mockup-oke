@@ -160,8 +160,8 @@
         }
 }
 .all__song__overlay {
-    max-height: 200px;
-    max-width: 190px;
+    max-height: 300px;
+    max-width: 280px;
 }
     #all_song {
         padding-top : 3em ;
@@ -183,6 +183,7 @@
 }
 @media (max-width: 740px) { 
     .select-btn {
-        width: 100px;
+        width: 120px;
+        font-size: 16px;
     }
 }

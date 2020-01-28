@@ -43,7 +43,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงอะไรสักอย่าง</h5>
-                        <h6>Potato</h6>
                     </div>
                     <div class="allsong_slide">
                         <img src="artist_pic/labanoon.jpg">
@@ -51,7 +50,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงอีกเพลงนึง</h5>
-                        <h6>Labanoon</h6>
                     </div>
                     <div class="allsong_slide">
                         <img src="artist_pic/rach.jpg">
@@ -59,7 +57,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเพิ่งออก</h5>
-                        <h6>Rachayo</h6>
                     </div>
                     <div class="allsong_slide">
                         <img src="artist_pic/palmy.jpg">
@@ -67,7 +64,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเก่าแล้ว</h5>
-                        <h6>Palmy</h6>
                     </div>
                     <div class="allsong_slide">
                         <img src="artist_pic/vitas.JPG">
@@ -75,7 +71,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเพลงหนึ่ง</h5>
-                        <h6>Vitas</h6>
                     </div>
                 </div>
                 <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true , "prevNextButtons": false, "pageDots": false}'>
@@ -85,7 +80,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงอะไรสักอย่าง</h5>
-                        <h6>Potato</h6>
                     </div>
                     <div class="allsong_slide">
                         <img src="artist_pic/labanoon.jpg">
@@ -93,7 +87,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงอีกเพลงนึง</h5>
-                        <h6>Labanoon</h6>
                     </div>
                     <div class="allsong_slide">
                         <img src="artist_pic/rach.jpg">
@@ -101,7 +94,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเพิ่งออก</h5>
-                        <h6>Rachayo</h6>
                     </div>
                     <div class="allsong_slide">
                         <img src="artist_pic/palmy.jpg">
@@ -109,7 +101,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเก่าแล้ว</h5>
-                        <h6>Palmy</h6>
                     </div>
                     <div class="allsong_slide">
                         <img src="artist_pic/vitas.JPG">
@@ -117,7 +108,6 @@
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเพลงหนึ่ง</h5>
-                        <h6>Vitas</h6>
                     </div>
                     {{-- <div class="allsong_slide">
                         <img src="artist_pic/ded.jpg">
