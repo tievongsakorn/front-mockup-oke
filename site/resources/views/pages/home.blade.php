@@ -1,6 +1,6 @@
 @extends('layouts.default')
 @section('content')
-    <div class="nonbts__container" id="corousal__top">
+    <div class="nonebts__container" id="corousal__top">
     
         <div class="owl-carousel owl-theme">
             <div class="item" id="img__box">
@@ -29,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="nonbts__container" style="padding-top: 2vh;">
+    <div class="nonebts__container" style="padding-top: 2vh;">
         <h3 id="slide-title">
             ศิลปินแนะนำ
             <a href="#">
@@ -95,7 +95,7 @@
         </div>    
     </div>
     
-    <div class="nonbts__container" style="padding-top: 5vh;">
+    <div class="nonebts__container" style="padding-top: 5vh;">
         <h3 id="slide-title">
             เพลงมาใหม่ 
             <a href="#">
@@ -178,7 +178,7 @@
         </div>
     </div>
     
-    <div class="nonbts__container" style="padding-top: 5vh;">
+    <div class="nonebts__container" style="padding-top: 5vh;">
         <h3 id="slide-title">
             เพลย์ลิสต์
             <a href="#">
@@ -272,7 +272,7 @@
             </div>
         </div>
     </div>
-    <div class="nonbts__container" style="padding-top: 5vh;">
+    <div class="nonebts__container" style="padding-top: 5vh;">
         <h3 id="slide-title">
             เพลงเหงาๆ วันฝนตก
             <a href="#">
@@ -354,7 +354,7 @@
             </div>
         </div>
     </div>
-    <div class="nonbts__container" style="padding-top: 3vh;">
+    <div class="nonebts__container" style="padding-top: 3vh;">
         <h3 id="slide-title">
             วันหยุด สุดชิล 
             <a href="#">

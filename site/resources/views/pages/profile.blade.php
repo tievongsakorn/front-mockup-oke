@@ -27,123 +27,195 @@
                     </div>
                 </div>
             </div>
-            <div c  lass="col-12" id="all_song" style="text-align : left;">
+            <div class="col-12" id="all_song" style="text-align : center;">
+                <div id="slide-title" style="text-align :left; padding-left : 0;">
+                    <h3>เพลงทั้งหมด
+                        <div style="text-align : right;">
+                            <button class="select-btn"> <img src="/icon/icon-addlist.png" height="25px" style="margin-bottom:2px"> เลือกเพลงทั้งหมด</button>
+                        </div>
+                        </h3>  
+                    </div>
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-xl-5">
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>ชื่อเพลงๆๆๆๆๆ</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente sit adipisci nisi maxime est maiores!</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>quos sequi accusamus quaerat libero aliquam expedita delectus nostrum cumque ratione eligendi esse!</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>ชื่อเพลงๆๆๆๆๆ</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>ชื่อเพลงๆๆๆๆๆ</h5>
+                            </div>
+                        </div>   
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>ชื่อเพลงๆๆๆๆๆ</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>ชื่อเพลงๆๆๆๆๆ</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>ชื่อเพลงๆๆๆๆๆ</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>ชื่อเพลงๆๆๆๆๆ</h5>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="allsong_slide">
+                                <img src="artist_pic/ded.jpg">
+                                <h5>ชื่อเพลงๆๆๆๆๆ</h5>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            {{-- <div class="col-12" id="all_song" style="text-align : left;">
                 <div id="slide-title">
                     <h3>เพลงทั้งหมด
                         <div style="text-align : right;">
                             <button class="select-btn"> <img src="/icon/icon-addlist.png" height="25px" style="margin-bottom:2px"> เลือกเพลงทั้งหมด</button>
                         </div>
                         </h3>  
-                <div>
+                    </div>
                 
                 <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true , "prevNextButtons": false, "pageDots": false}'>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/ded.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงอะไรสักอย่าง</h5>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/labanoon.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงอีกเพลงนึง</h5>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/rach.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเพิ่งออก</h5>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/palmy.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเก่าแล้ว</h5>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/vitas.JPG">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเพลงหนึ่ง</h5>
                     </div>
                 </div>
                 <div class="main-carousel" data-flickity='{ "cellAlign": "center", "contain": true , "prevNextButtons": false, "pageDots": false}'>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/ded.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงอะไรสักอย่าง</h5>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/labanoon.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงอีกเพลงนึง</h5>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/rach.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเพิ่งออก</h5>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/palmy.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเก่าแล้ว</h5>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/vitas.JPG">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเพลงหนึ่ง</h5>
                     </div>
-                    {{-- <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/ded.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>ทิ้งไว้ต้นทาง</h5>
                         <h6>Carrot</h6>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/oat.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>ชื่อเพลง</h5>
                         <h6>Oat Pramote</h6>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/tu.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>พูดทำไม</h5>
                         <h6>Tu Phobthorn</h6>
                     </div>
-                    <div class="allsong_slide">
+                    <div class="col-lg col-md-4 allsong_slide">
                         <img src="artist_pic/atom.jpg">
-                        <div class="all__song__overlay">
+                        
                             <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
                         </div>
                         <h5>เพลงเบา ฟังชิล</h5>
                         <h6>Atom</h6>
-                    </div> --}}
+                    </div>
                 </div>
             </div>
-        </div></div>
+        </div></div> --}}
 
     </div>      
     </div>

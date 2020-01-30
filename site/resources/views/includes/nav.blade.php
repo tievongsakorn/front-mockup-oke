@@ -10,22 +10,22 @@
     <button class="regis-bt">สมัครสมาชิก</button>
 </div>
 </div>
-<div id="mySidenav" class="sidenav" style="width: 0px;">
-<div class="icon__bar--btn">
-<span style="font-size:30px;cursor:pointer ;" onclick="navbutton()">&#9776;</span>
-</div>
-<div class="icon__bar" id="icon__bar" style="visibility: hidden;">  
-<img id="logo_img--mobile"src="/imgs/t_logo.png">
-<a href="/"><img src="/icon/icon-home.png"><p>หน้าแรก</p><span></span></a>
-<a href="#"><img src="/icon/icon-mice.png"><p>คาราโอเกะ</p><span></span></a> 
-<a href="#"><img src="/icon/icon-m_his.png"><p>เพลงที่ร้องล่าสุด</p><span></span></a>
-<a href="#" style="padding-bottom : 0.5em"><img src="/icon/icon-pro.png"><p>โปรไฟล์</p><span></span></a>
-<div class="sm-scn-login">
-    <a href="#"><img src="/icon/icon-login.png" id="sm-scn-login" style="height: 50px; padding-left :16px"><p>เข้าสู่ระบบ</p><span></span></a>
-    <a href="#"><img src="/icon/icon-regis.png" id="sm-scn-login" style="height: 55px;"><p>สมัครสมาชิก</p><span></span></a>
-</div>
+<div id="mySidenav" class="sidenav">
+  <div class="icon__bar--btn">
+    <span style="font-size:30px;cursor:pointer ;" id="toggleNav">&#9776;</span>
+  </div>
+  <div class="icon__bar" id="icon__bar">  
+      <img id="logo_img--mobile"src="/imgs/t_logo.png">
+      <a href="/"><img src="/icon/icon-home.png"><p>หน้าแรก</p><span></span></a>
+      <a href="#"><img src="/icon/icon-mice.png"><p>คาราโอเกะ</p><span></span></a> 
+      <a href="#"><img src="/icon/icon-m_his.png"><p>เพลงที่ร้องล่าสุด</p><span></span></a>
+      <a href="#" style="padding-bottom : 0.5em"><img src="/icon/icon-pro.png"><p>โปรไฟล์</p><span></span></a>
+      <div class="sm-scn-login">
+          <a href="#"><img src="/icon/icon-login.png" id="sm-scn-login" style="height: 50px; padding-left :16px"><p>เข้าสู่ระบบ</p><span></span></a>
+          <a href="#"><img src="/icon/icon-regis.png" id="sm-scn-login" style="height: 55px;"><p>สมัครสมาชิก</p><span></span></a>
+      </div>
 
-</div>
+  </div>
 </div>
 {{-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>

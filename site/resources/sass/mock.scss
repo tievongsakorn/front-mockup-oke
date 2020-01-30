@@ -48,19 +48,12 @@ body{
 #navspace {
     transition: all 0.6s ease;
     position: relative;
+    transform: translateX(70px);
 }
 //คอนเทนเนอร์หลัก
-.nonbts__container {
+.nonebts__container {
     width: 100%;
     padding-left: 0;
-    .row {
-        padding-top: 20px;
-        .col {
-            img{
-                border: 3px solid white;
-            }
-        }
-    }
 }
 //เมนูบาร์ด้านบน
 #logo_img {
@@ -125,14 +118,13 @@ body{
 //เมนูบาร์ด้านข้าง
 .sidenav {
     height: 100%;
-    width: 0;
+    
     position: fixed;
     z-index: 10;
     background-color: $blue-col;
     transition: 0.6s;
     #icon__bar { 
-        visibility: hidden;
-        opacity: 0;
+        opacity: 1;
     }
     .icon__bar {
         width: 70px;
@@ -158,7 +150,7 @@ body{
       }
       .icon__bar--btn {
         z-index: 10;
-        width: 65px;
+        width: 70px;
         padding-top: 0.4em;
         img {
             position: relative;
@@ -181,6 +173,7 @@ body{
         }
       }
 }
+
 .sm-scn-login {
     visibility: hidden;
 }
@@ -210,20 +203,20 @@ body{
         padding-bottom: 30px;
     }
 }
-
 .owl-item.active.center {
     transform: scale(1) !important;
     filter:grayscale(0);
+    outline: none;
   }
-.owl-dots:active {
-    outline: 0;
+.owl-dots.active {
+    outline: none;
 }
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:active span {
     width: 2.5rem;
     height: 8px;
     transition: 0.5s;
     background-color: #1f1bee ;
-    outline: 0;
+    outline: none;
 } 
 .owl-theme .owl-dots .owl-dot:active span:focus {
     outline: none;
@@ -372,7 +365,8 @@ body{
 .footer {
     width: 98%;
     margin-left: 1%;
-    margin-top: 4em;
+    margin-top: 3em;
+    padding-top: 1em;
     border-top: 1px solid rgba(4,4,4,0.3);
     img {
         padding-bottom: 1em;
@@ -481,7 +475,10 @@ body{
 }
 // <-----------------------------จอขนาดเล็ก----------------------------->
 
-@media (max-width: 740px) { 
+@media (max-width: 740px) {
+    #navspace {
+        transform: translateX(0px);
+    } 
     .topnav {
         height: 70px;
         
@@ -506,6 +503,9 @@ body{
             padding-left: 30px;
             background-position: 4px;
         }
+    }
+    .sidenav {
+        width: 0;
     }
     #logo_img {
         top:48%;
@@ -567,6 +567,10 @@ body{
         }
     }
     .sidenav {
+        #icon__bar { 
+            opacity: 0;
+            visibility: hidden;
+        }
         .icon__bar--btn {
             padding-top: 4px;
         }

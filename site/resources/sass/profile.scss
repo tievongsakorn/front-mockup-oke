@@ -49,29 +49,26 @@
 }
 
 .allsong_slide {
-    padding: 1em;
     img {
-        width: 260px;
-        height: 165px;
+        object-fit: cover;
+        width: 280px;
+        height: 160px;
         border: 4px white solid;
         border-radius: 25px;
         box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
     }
     h5 {
-        width: 250px;
-        max-height: 2em;
-        font-weight: 400;
+        width: 240px;
+        max-height: 3em;
+        font-weight: 400;   
         text-align: left;
         overflow: hidden;
         font-weight: 300;
         color: #333;
-        padding-top: 1em;
+        padding-top: 0.7em;
+        margin-left: 1em;
+        padding-bottom: 1em;
         font-size: 20px;
-    }
-    h6 {
-        font-weight: 300;
-        text-align: left;
-        color: #333;
     }
 }
 
@@ -86,6 +83,7 @@
     right: 0;
     height: 100%;
     width: 100%;
+    margin: 1em;
     max-height: 330px;
     max-width: 270px;
     transition: all .3s ease;
@@ -97,10 +95,10 @@
     background-color: white;
     color: #006aff;
     text-align: center;
-    width: 220px;
-    height: 45px;
+    width: 190px;
+    height: 35px;
     border: none;
-    font-size: 22px;
+    font-size: 19px;
     position: absolute;
     padding-top: 5px;
     transform: translate(-100%,-100%);
@@ -120,7 +118,7 @@
         max-height: 520px;
         .img-box {
             max-height: 100%;
-            max-width: 100%;
+            width: 100%;
             transform: translate(0%, 0%);
             img {
                 height: 100%;
@@ -137,8 +135,18 @@
             width: 100%;
         }
     }
+    .allsong_slide {
+        padding: 0;
+        padding-top: 1rem;
+        img {
+            width: 220px;
+            height: 145px;
+            border: 4px white solid;
+            border-radius: 25px;
+            box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        }
+    }
     .art__song {
-        margin-right: 25px;
         padding-top: 1em;
         padding-bottom: 1em;     
         img {
@@ -161,7 +169,7 @@
 }
 .all__song__overlay {
     max-height: 300px;
-    max-width: 280px;
+    max-width: 220px;
 }
     #all_song {
         padding-top : 3em ;
@@ -183,7 +191,33 @@
 }
 @media (max-width: 740px) { 
     .select-btn {
-        width: 120px;
-        font-size: 16px;
+        width: 100px;
+        height: 30PX;
+        padding-bottom: 1px;
+        font-size:  9px;
+    }
+    .allsong__grid {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .allsong_slide {
+        margin: 0px;
+        img {
+            width: 150px;
+            height: 100px;
+            border: 4px white solid;
+            border-radius: 13px;
+            box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        }
+        h5 {
+            font-size: 16px;
+        }
+    }
+    #all_song {
+        #slide-title {
+            h3 {
+                font-size: 22px;
+            }
+        }
     }
 }
