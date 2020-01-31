@@ -24,9 +24,11 @@
 .pro__pic__box {
     display: inline-block;
     vertical-align: middle;
-    height: 400px;
-    width: 400px;
-    border-radius: 50px;
+    height: 100%;
+    width: auto;
+    max-height: 400px;
+    max-width: 400px;
+    border-radius: 30px;
     box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.4);
     overflow: hidden;
     z-index: 15;
@@ -34,12 +36,12 @@
     img {
         transform: translate(-30%, 0%);
         width: auto;
-        height: 150%;
+        height: 140%;
     }
 }
 .art__detail {
     h1 {
-        font-size: 40px;
+        font-size: 44px;
     }
     p {
         width: 90%;
@@ -48,10 +50,29 @@
     }
 }
 
-.allsong_slide {
+.allsong_col {
+    div {
+        position: relative;
+        a {
+            position: absolute; 
+            bottom: 15px; 
+            right: 15px;
+            img {
+                width: 50px; 
+                height: 50px; 
+                border: none;
+            }
+            
+        }
+        a:hover{
+            transition: all 0.2s;
+            transform: scale(1.1);
+        }
+    }
     img {
         object-fit: cover;
-        width: 280px;
+        width: 100% ;
+        max-width: 280px;
         height: 160px;
         border: 4px white solid;
         border-radius: 25px;
@@ -75,21 +96,40 @@
 #all_song {
     padding-top : 10em ;
 }
-.all__song__overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    margin: 1em;
-    max-height: 330px;
-    max-width: 270px;
-    transition: all .3s ease;
-    border: none;
-    overflow: hidden;
-  }
+.allsong__overlay {
+    // position: initial;
+    // top: 0;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
+    // height: 100%;
+    // width: 100%;
+    // max-height: 160px;
+    // max-width: 280px;
+    // transition: all .3s ease;
+    // border: none;
+    // overflow: hidden;
+    .all__icon {
+        position: absolute;
+        top: 50%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+        img {
+            border: none;
+            height: 50px;
+            width: 50px;
+        }
+      }
+}
+  .all__icon:hover {
+    img {
+      transition: all 0.1s;
+      height: 55px;
+      width: 55px;
+    }
+}
 
 .select-btn {
     background-color: white;
@@ -135,15 +175,18 @@
             width: 100%;
         }
     }
-    .allsong_slide {
-        padding: 0;
-        padding-top: 1rem;
+    .allsong_col {
         img {
-            width: 220px;
-            height: 145px;
+            width: 100%;
+            // height: 145px;
+            max-width: 270px;
+            max-height: 150px;
             border: 4px white solid;
             border-radius: 25px;
             box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        }
+        h5 {
+            width: 150px;
         }
     }
     .art__song {
@@ -167,9 +210,14 @@
             color: #333;
         }
 }
-.all__song__overlay {
-    max-height: 300px;
-    max-width: 220px;
+.allsong__overlay {
+    // max-height: 270px;
+    // max-width: 150px;
+    .all__icon {
+        padding-right: 5px;
+        top: 55%;
+        left: 80%;
+    }
 }
     #all_song {
         padding-top : 3em ;
@@ -189,28 +237,53 @@
         }
     }
 }
+//------------------------------โหมจอขนาดเล็ก-------------------------------------
 @media (max-width: 740px) { 
+    .art__detail {
+        h1 {
+            text-align: center;
+        }
+    }
     .select-btn {
         width: 100px;
         height: 30PX;
-        padding-bottom: 1px;
+        padding-bottom: 30px;
         font-size:  9px;
     }
     .allsong__grid {
-        padding-left: 0px;
-        padding-right: 0px;
+        .col {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
     }
-    .allsong_slide {
-        margin: 0px;
+    .allsong_col {
+        div {
+            position: relative;
+            a {
+                position: absolute; 
+                bottom: 8px; 
+                right: 8px;
+                img {
+                    width: 30px; 
+                    height: 30px; 
+                    border: none;
+                }
+            }
+            
+        }
+        // margin: 0px;
         img {
-            width: 150px;
-            height: 100px;
-            border: 4px white solid;
+            width: 100%;
+            max-width: 160px;
+            max-height: 85px;
+            border:3px white solid;
             border-radius: 13px;
             box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
         }
         h5 {
             font-size: 16px;
+            width: 140px;
+            margin-left: 0;
         }
     }
     #all_song {
@@ -218,6 +291,25 @@
             h3 {
                 font-size: 22px;
             }
+        }
+    }
+    .allsong__overlay {
+        .all__icon {
+            top: 50%;
+            padding-right: 10px;
+            img {
+                border: none;
+                height: 30px;
+                width: 30px;
+            }    
+          }
+   
+    }
+    .all__icon:hover {
+        img {
+            transition: all 1ms;
+            height: 32px;
+            width: 32px;
         }
     }
 }

@@ -34074,7 +34074,7 @@ var Handler = __webpack_require__(/*! ./handler */ "./resources/js/handler.js");
 
 $('.owl-carousel').owlCarousel({
   stagePadding: 100,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 3500,
   dots: true,
   loop: true,
@@ -34108,7 +34108,7 @@ $('#toggleNav').on('click', function (e) {
 
   if (nav.css('visibility') == 'hidden') {
     if (scw < 576) {
-      mySidenav.css('width', '60%');
+      mySidenav.css('width', '70%');
     } else {
       mySidenav.css('width', '70px');
       navSpace.css('transition', '0.7s');

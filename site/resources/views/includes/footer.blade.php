@@ -3,13 +3,13 @@
     <div class="col-12">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6" style="padding-left:0px;">
                     <img src="imgs/b_logo.png" alt="">
                     <h3>ดาวน์โหลดแอปพลิเคชั่น</h3>
                     <a href="#"><img id="dl_pic" src="/imgs/dl-ios.png" width="140px"></a>
                     <a href="#"><img id="dl_pic" src="/imgs/dl-an.png" width="140px"></a>
                 </div>
-                <div class="col-6" style="padding-right:15px;">
+                <div class="col-6" style="padding-right:0px;">
                         <div class="contact">
                             <ul>
                                 <li><a href="#">เกี่ยวกับเรา</a></li> 

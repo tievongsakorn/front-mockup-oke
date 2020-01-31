@@ -235,9 +235,11 @@
 .pro__pic__box {
   display: inline-block;
   vertical-align: middle;
-  height: 400px;
-  width: 400px;
-  border-radius: 50px;
+  height: 100%;
+  width: auto;
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 30px;
   box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   z-index: 15;
@@ -249,11 +251,11 @@
   -webkit-transform: translate(-30%, 0%);
           transform: translate(-30%, 0%);
   width: auto;
-  height: 150%;
+  height: 140%;
 }
 
 .art__detail h1 {
-  font-size: 40px;
+  font-size: 44px;
 }
 
 .art__detail p {
@@ -262,17 +264,41 @@
   font-size: 20px;
 }
 
-.allsong_slide img {
+.allsong_col div {
+  position: relative;
+}
+
+.allsong_col div a {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.allsong_col div a img {
+  width: 50px;
+  height: 50px;
+  border: none;
+}
+
+.allsong_col div a:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.allsong_col img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 280px;
+  width: 100%;
+  max-width: 280px;
   height: 160px;
   border: 4px white solid;
   border-radius: 25px;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
-.allsong_slide h5 {
+.allsong_col h5 {
   width: 240px;
   max-height: 3em;
   font-weight: 400;
@@ -290,21 +316,27 @@
   padding-top: 10em;
 }
 
-.all__song__overlay {
+.allsong__overlay .all__icon {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  margin: 1em;
-  max-height: 330px;
-  max-width: 270px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  top: 50%;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.allsong__overlay .all__icon img {
   border: none;
-  overflow: hidden;
+  height: 50px;
+  width: 50px;
+}
+
+.all__icon:hover img {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  height: 55px;
+  width: 55px;
 }
 
 .select-btn {
@@ -359,17 +391,17 @@
     width: 100%;
   }
 
-  .allsong_slide {
-    padding: 0;
-    padding-top: 1rem;
-  }
-
-  .allsong_slide img {
-    width: 220px;
-    height: 145px;
+  .allsong_col img {
+    width: 100%;
+    max-width: 270px;
+    max-height: 150px;
     border: 4px white solid;
     border-radius: 25px;
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+  }
+
+  .allsong_col h5 {
+    width: 150px;
   }
 
   .art__song {
@@ -397,9 +429,10 @@
     color: #333;
   }
 
-  .all__song__overlay {
-    max-height: 300px;
-    max-width: 220px;
+  .allsong__overlay .all__icon {
+    padding-right: 5px;
+    top: 55%;
+    left: 80%;
   }
 
   #all_song {
@@ -425,36 +458,73 @@
 }
 
 @media (max-width: 740px) {
+  .art__detail h1 {
+    text-align: center;
+  }
+
   .select-btn {
     width: 100px;
     height: 30PX;
-    padding-bottom: 1px;
+    padding-bottom: 30px;
     font-size: 9px;
   }
 
-  .allsong__grid {
-    padding-left: 0px;
-    padding-right: 0px;
+  .allsong__grid .col {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
-  .allsong_slide {
-    margin: 0px;
+  .allsong_col div {
+    position: relative;
   }
 
-  .allsong_slide img {
-    width: 150px;
-    height: 100px;
-    border: 4px white solid;
+  .allsong_col div a {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+  }
+
+  .allsong_col div a img {
+    width: 30px;
+    height: 30px;
+    border: none;
+  }
+
+  .allsong_col img {
+    width: 100%;
+    max-width: 160px;
+    max-height: 85px;
+    border: 3px white solid;
     border-radius: 13px;
     box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
   }
 
-  .allsong_slide h5 {
+  .allsong_col h5 {
     font-size: 16px;
+    width: 140px;
+    margin-left: 0;
   }
 
   #all_song #slide-title h3 {
     font-size: 22px;
+  }
+
+  .allsong__overlay .all__icon {
+    top: 50%;
+    padding-right: 10px;
+  }
+
+  .allsong__overlay .all__icon img {
+    border: none;
+    height: 30px;
+    width: 30px;
+  }
+
+  .all__icon:hover img {
+    -webkit-transition: all 1ms;
+    transition: all 1ms;
+    height: 32px;
+    width: 32px;
   }
 }
 
@@ -727,6 +797,8 @@ body {
   transition: 0.6s ease;
   -webkit-filter: opacity(50%);
           filter: opacity(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .art__slide,
@@ -744,6 +816,8 @@ body {
 .recom_slide img,
 .playli_slide img,
 .newsong_slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: auto;
   height: 100px;
 }
@@ -767,6 +841,7 @@ body {
 .recom_slide h5,
 .playli_slide h5,
 .newsong_slide h5 {
+  width: 100%;
   overflow: hidden;
   font-weight: 300;
   color: #333;
@@ -785,7 +860,7 @@ body {
 }
 
 .newsong_slide {
-  margin-right: 0px;
+  margin-right: 10px;
 }
 
 .newsong_slide img {
@@ -808,7 +883,7 @@ body {
 }
 
 .playli_slide {
-  margin-right: 0px;
+  margin-right: 10px;
 }
 
 .playli_slide img {
@@ -832,7 +907,7 @@ body {
 }
 
 .recom_slide {
-  margin-right: 0px;
+  margin-right: 10px;
 }
 
 .recom_slide img {
@@ -855,25 +930,13 @@ body {
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  max-height: 325px;
-  max-width: 240px;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  border: none;
   overflow: hidden;
 }
 
 .icon {
   position: absolute;
   top: 50%;
-  left: 85%;
+  left: 80%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -955,6 +1018,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .topnav .form__search {
     margin-top: 2px;
   }
@@ -990,6 +1057,7 @@ body {
 
   .footer .row {
     padding-left: 0;
+    padding-right: 0;
   }
 
   .footer img {
@@ -1006,6 +1074,10 @@ body {
 }
 
 @media (max-width: 740px) {
+  body {
+    overflow-x: hidden;
+  }
+
   #navspace {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
@@ -1049,7 +1121,7 @@ body {
   #logo_img {
     top: 48%;
     width: 20%;
-    margin-left: 55px;
+    margin-left: 50px;
   }
 
   #logo_img--mobile {
@@ -1066,17 +1138,18 @@ body {
 
   .item {
     height: 170px;
-    border-radius: 15px;
+    border-radius: 13px;
   }
 
   #slide-title {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   .art__slide,
   .newsong_slide,
   .playli_slide,
   .recom_slide {
+    margin-right: 30px;
     padding-top: 1em;
   }
 
@@ -1084,44 +1157,65 @@ body {
   .newsong_slide img,
   .playli_slide img,
   .recom_slide img {
-    height: 80px;
+    height: 45px;
   }
 
   .art__slide .img__circle,
   .newsong_slide .img__circle,
   .playli_slide .img__circle,
   .recom_slide .img__circle {
-    width: 135px;
-    height: 135px;
+    width: 95px;
+    height: 95px;
+    border: 3px solid white;
+  }
+
+  .art__slide h5,
+  .newsong_slide h5,
+  .playli_slide h5,
+  .recom_slide h5 {
+    font-size: 16px;
+  }
+
+  .art__slide h6,
+  .newsong_slide h6,
+  .playli_slide h6,
+  .recom_slide h6 {
+    font-size: 12px;
   }
 
   .newsong_slide {
-    margin-right: -15px;
+    margin-right: -50px;
   }
 
   .newsong_slide img {
-    width: 200px;
-    height: 110px;
-    border-radius: 15px;
+    width: 180px;
+    height: 100px;
+    border-radius: 13px;
   }
 
   .playli_slide {
-    margin-right: -15px;
+    margin-right: -45px;
+    margin-left: -40px;
   }
 
   .playli_slide img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .playli_slide .icon {
+    left: 46%;
+    top: 60%;
   }
 
   .recom_slide {
-    margin-right: -15px;
+    margin-right: -50px;
   }
 
   .recom_slide img {
-    width: 200px;
+    width: 180px;
     height: 110px;
-    border-radius: 15px;
+    border-radius: 13px;
   }
 
   .sidenav #icon__bar {
@@ -1176,9 +1270,9 @@ body {
   }
 
   .icon {
-    position: absolute;
-    top: 43%;
-    left: 86%;
+    position: fixed;
+    top: 45%;
+    left: 60%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -1189,6 +1283,10 @@ body {
     border: none;
     height: 35px;
     width: 35px;
+  }
+
+  .icon:hover {
+    left: 0px;
   }
 
   .icon:hover img {
@@ -1221,22 +1319,6 @@ body {
 
   .footer .contact li {
     display: block;
-  }
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    max-height: 325px;
-    max-width: 200px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    border: none;
-    overflow: hidden;
   }
 }
 
