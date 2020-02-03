@@ -1,7 +1,6 @@
 @extends('layouts.default')
 @section('content')
     <div class="nonebts__container" id="corousal__top">
-    
         <div class="owl-carousel owl-theme">
             <div class="item" id="img__box">
                 <img  src="/playli/6.jpg">
@@ -94,8 +93,7 @@
             </div>
         </div>    
     </div>
-    
-    <div class="nonebts__container" style="padding-top: 5vh;">
+    <div class="nonebts__container" id="corousal-top">
         <h3 id="slide-title">
             เพลงมาใหม่ 
             <a href="#">
@@ -104,81 +102,80 @@
         </h3>
         <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
             <div class="newsong_slide" id="first-slide">
-                <img src="artist_pic/ded.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/ded.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงอะไรสักอย่าง</h5>
                 <h6>Potato</h6>
             </div>
             <div class="newsong_slide">
-                <img src="artist_pic/labanoon.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/labanoon.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงอีกเพลงนึง</h5>
                 <h6>Labanoon</h6>
             </div>
             <div class="newsong_slide">
-                <img src="artist_pic/rach.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/rach.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเพิ่งออก</h5>
                 <h6>Rachayo</h6>
             </div>
             <div class="newsong_slide">
-                <img src="artist_pic/palmy.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/palmy.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเก่าแล้ว</h5>
                 <h6>Palmy</h6>
             </div>
             <div class="newsong_slide">
-                <img src="artist_pic/vitas.JPG">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/vitas.JPG">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเพลงหนึ่ง</h5>
                 <h6>Vitas</h6>
             </div>
             <div class="newsong_slide">
-                <img src="artist_pic/ded.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/ded.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>ทิ้งไว้ต้นทาง</h5>
                 <h6>Carrot</h6>
             </div>
             <div class="newsong_slide">
-                <img src="artist_pic/oat.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/oat.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>ชื่อเพลง</h5>
                 <h6>Oat Pramote</h6>
             </div>
             <div class="newsong_slide">
-                <img src="artist_pic/tu.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/tu.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>พูดทำไม</h5>
                 <h6>Tu Phobthorn</h6>
             </div>
             <div class="newsong_slide">
-                <img src="artist_pic/atom.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/atom.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
                 <h6>Atom</h6>
             </div>
         </div>
     </div>
-    
-    <div class="nonebts__container" style="padding-top: 5vh;">
+    <div class="nonebts__container" id="corousal-top">
         <h3 id="slide-title">
             เพลย์ลิสต์
             <a href="#">
@@ -187,92 +184,92 @@
         </h3>
         <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
             <div class="playli_slide" id="first-slide">
-                <img src="playli/1.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/1.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/2.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/2.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/3.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/3.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/4.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/4.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/5.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/5.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/6.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/6.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/7.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/7.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/8.JPG">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/8.JPG">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/9.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/9.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/10.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/10.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/11.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/11.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
             <div class="playli_slide">
-                <img src="playli/12.jpg">
-                 <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>   
+                    <img src="playli/12.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
             </div>
         </div>
     </div>
-    <div class="nonebts__container" style="padding-top: 5vh;">
+    <div class="nonebts__container" id="corousal-top"">
         <h3 id="slide-title">
             เพลงเหงาๆ วันฝนตก
             <a href="#">
@@ -281,80 +278,80 @@
         </h3>
         <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
             <div class="recom_slide" id="first-slide">
-                <img src="artist_pic/ded.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/ded.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงอะไรสักอย่าง</h5>
                 <h6>Potato</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/labanoon.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/labanoon.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงอีกเพลงนึง</h5>
                 <h6>Labanoon</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/rach.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/rach.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเพิ่งออก</h5>
                 <h6>Rachayo</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/palmy.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/palmy.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเก่าแล้ว</h5>
                 <h6>Palmy</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/vitas.JPG">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/vitas.JPG">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเพลงหนึ่ง</h5>
                 <h6>Vitas</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/ded.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/ded.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>ทิ้งไว้ต้นทาง</h5>
                 <h6>Carrot</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/oat.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/oat.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>ชื่อเพลง</h5>
                 <h6>Oat Pramote</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/tu.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/tu.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>พูดทำไม</h5>
                 <h6>Tu Phobthorn</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/atom.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/atom.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
                 <h6>Atom</h6>
             </div>
         </div>
     </div>
-    <div class="nonebts__container" style="padding-top: 3vh;">
+    <div class="nonebts__container" id="corousal-top">
         <h3 id="slide-title">
             วันหยุด สุดชิล 
             <a href="#">
@@ -363,65 +360,65 @@
             </h3>
         <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "prevNextButtons": false, "pageDots": false}'>
             <div class="recom_slide" id="first-slide">
-                <img src="artist_pic/ded.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/ded.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงอะไรสักอย่าง</h5>
                 <h6>Potato</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/labanoon.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/labanoon.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงอีกเพลงนึง</h5>
                 <h6>Labanoon</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/rach.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/rach.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเพิ่งออก</h5>
                 <h6>Rachayo</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/vitas.JPG">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/vitas.JPG">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเพลงหนึ่ง</h5>
                 <h6>Vitas</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/ded.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/ded.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>ทิ้งไว้ต้นทาง</h5>
                 <h6>Carrot</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/oat.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/oat.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>ชื่อเพลง</h5>
                 <h6>Oat Pramote</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/tu.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/tu.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>พูดทำไม</h5>
                 <h6>Tu Phobthorn</h6>
             </div>
             <div class="recom_slide">
-                <img src="artist_pic/atom.jpg">
-                <div class="overlay">
-                    <a href="#" class="icon"><img src="/icon/icon-play.png"></a>
+                <div>
+                    <img src="artist_pic/atom.jpg">
+                    <a href="#"><img src="/icon/icon-play.png"></a>
                 </div>
                 <h5>เพลงเบา ฟังชิล</h5>
                 <h6>Atom</h6>

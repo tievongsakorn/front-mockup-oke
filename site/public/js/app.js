@@ -34085,7 +34085,7 @@ $('.owl-carousel').owlCarousel({
   responsive: {
     0: {
       items: 1,
-      stagePadding: 0,
+      stagePadding: 25,
       margin: 0
     },
     600: {
@@ -34109,12 +34109,13 @@ $('#toggleNav').on('click', function (e) {
   if (nav.css('visibility') == 'hidden') {
     if (scw < 576) {
       mySidenav.css('width', '70%');
+      navSpace.css('transform', 'translateX(10%)');
     } else {
       mySidenav.css('width', '70px');
       navSpace.css('transition', '0.7s');
+      navSpace.css('transform', 'translateX(70px)');
     }
 
-    navSpace.css('transform', 'translateX(70px)');
     nav.css({
       'opacity': '1',
       'visibility': 'visible',

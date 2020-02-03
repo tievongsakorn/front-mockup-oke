@@ -56,6 +56,9 @@ body{
     width: 100%;
     padding-left: 0;
 }
+#corousal-top {
+    padding-top: 4vh;
+}
 //เมนูบาร์ด้านบน
 #logo_img {
     width : 95px;
@@ -173,7 +176,6 @@ body{
         }
       }
 }
-
 .sm-scn-login {
     visibility: hidden;
 }
@@ -247,7 +249,7 @@ body{
         border: 4px solid white;
         overflow: hidden;
         border-radius: 50%;
-        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
     }
     h5{
         width: 100%;
@@ -268,90 +270,122 @@ body{
 .newsong_slide {
     @extend .art__slide ;
     margin-right: 10px;
+    div {
+        position: relative;
+        a {
+            position: absolute; 
+            bottom: 10px; 
+            right: 10px;
+            img {
+                width: 50px; 
+                height: 50px; 
+                border: none;
+            }
+            
+        }
+        a:hover{
+            transition: all 0.2s;
+            transform: scale(1.1);
+        }
+    }
     img {
-        width: 240px;
+        width: 250px;
         height: 150px;
         border: 4px white solid;
         border-radius: 25px;
-        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
     }
     h5 {
         width: 250px;
-        max-height: 2em;
+        max-height: 4rem;
         font-weight: 400;
         text-align: left;
     }
     h6 {
         text-align: left;
+        width: 250px;
+        max-height: 3rem;
+        overflow: hidden;
     }
 }
 //ส่วนสไลด์ของเพลย์ลิสต์
 .playli_slide {
     @extend .art__slide ;
+    div {
+        position: relative;
+        a {
+            position: absolute; 
+            bottom: 10px; 
+            right: 10px;
+            img {
+                width: 50px; 
+                height: 50px; 
+                border: none;
+            }
+            
+        }
+        a:hover{
+            transition: all 0.2s;
+            transform: scale(1.1);
+        }
+    }
     margin-right: 10px;
     img {
-        width: 240px;
-        height: 240px;
+        width: 250px;
+        height: 250px;
         border: 4px white solid;
         border-radius: 15px;
-        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
     }
     h5 {
         width: 250px;
-        max-height: 2em;
+        max-height: 4rem;
         font-weight: 400;
         font-size: 20px;
         text-align: left;
-    }
-    .icon {
-        top: 65%; 
     }
 }
 //ส่วนสไลด์ของเพลงมาใหม่
 .recom_slide {
     @extend .art__slide ;
     margin-right: 10px;
+    div {
+        position: relative;
+        a {
+            position: absolute; 
+            bottom: 10px; 
+            right: 10px;
+            img {
+                width: 50px; 
+                height: 50px; 
+                border: none;
+            }
+            
+        }
+        a:hover{
+            transition: all 0.2s;
+            transform: scale(1.1);
+        }
+    }
     img {
-        width: 240px;
+        width: 250px;
         height: 150px;
         border: 4px white solid;
         border-radius: 25px;
-        box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
     }
     h5 {
         width: 250px;
-        max-height: 2em;
+        max-height: 4rem;
         font-weight: 400;
         text-align: left;
     }
     h6 {
         text-align: left;
+        width: 250px;
+        max-height: 3rem;
+        overflow: hidden;
     }
-}
-//โอเวอร์เลยรูปในสไดล์เพื่อใส่ปุ่มเล่น
-.overlay {
-    overflow: hidden;
-  }
-  //ตัวปุ่มเล่น
-  .icon {
-    position: absolute;
-    top: 50%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    img {
-        border: none;
-        height: 50px;
-        width: 50px;
-    }
-  }
-  .icon:hover {
-  img {
-      transition: all 0.1s;
-      height: 55px;
-      width: 55px;
-  }
 }
 //ฟููตเตอร์หลัก
 .footer {
@@ -457,6 +491,7 @@ body{
         }
     }
 }
+
 // <-----------------------------จอขนาดเล็ก----------------------------->
 
 @media (max-width: 740px) {
@@ -466,9 +501,11 @@ body{
     #navspace {
         transform: translateX(0px);
     } 
+    #corousal-top {
+        padding-top: 10px;
+    }
     .topnav {
         height: 70px;
-        
         .form__search {
             text-align: right;
             padding-right: 1em;
@@ -516,18 +553,16 @@ body{
     #slide-title {
         font-size: 20px;
     }
-//     #first-slide {
-//     padding-left: 3em ;
-// }
     .art__slide {
         margin-right: 30px;
         padding-top: 1em;
+        transform: translateX(15px);
         img {
             height: 45px;
         }
         .img__circle {
-            width: 95px;
-            height: 95px;
+            width: 90px;
+            height: 90px;
             border: 3px solid white;
         }
         h5 {
@@ -538,31 +573,78 @@ body{
         }
     }   
     .newsong_slide {
-        margin-right: -50px;    
+        margin-right: -35px; 
+        transform: translateX(10px);
+        div {
+            width: 200px;
+            position: relative;
+            a {
+                position: absolute; 
+                bottom: 10px; 
+                right: 10px;
+                img {
+                    width: 35px; 
+                    height: 35px; 
+                    border: none;
+                }
+            }
+            
+        }
         img {
-            width: 180px;
-            height: 100px;
-            border-radius: 13px;
+            width: 200px;
+            height: 110px;
+            border-radius: 10px;
+            border: 3px white solid;
         }
     }
     .playli_slide {
-        margin-right: -45px;
-        margin-left: -40px;
-        img {
-            width: 150px;
-            height: 150px;
+        transform: translateX(10px);
+        margin-right: -50px;
+        margin-left: -55px;
+        div {
+            width: 135px;
+            position: relative;
+            a {
+                position: absolute; 
+                bottom: 10px; 
+                right: 10px;
+                img {
+                    width: 30px; 
+                    height: 30px; 
+                    border: none;
+                }
+            }
+            
         }
-        .icon {
-            left: 46%;
-            top: 60%;
+        img {
+            width: 135px;
+            height: 135px;
+            border: 3px white solid;
         }
     }
     .recom_slide {
-        margin-right: -50px;
+        transform: translateX(10px);
+        margin-right: -35px;
+        div {
+            width: 200px;
+            position: relative;
+            a {
+                position: absolute; 
+                bottom: 10px; 
+                right: 10px;
+                img {
+                    width: 35px; 
+                    height: 35px; 
+                    border: none;
+                }
+            }
+            
+        }
         img {
-            width: 180px;
+            width: 200px;
             height: 110px;
-            border-radius: 13px;
+            border-radius: 10px;
+            border: 3px white solid;
         }
     }
     .sidenav {
@@ -608,32 +690,12 @@ body{
     #button {
         visibility: hidden;
     }
-    .icon {
-        position: fixed;
-        top: 45%;
-        left: 60%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        text-align: center;
-        img {
-            border: none;
-            height: 35px;
-            width: 35px;
-        }    
-      }
-      .icon:hover {
-        img {
-            transition: all 0.1s;
-            height: 38px;
-            width: 38px;
-        }
-        left: 0px; 
-    }
     .footer__copyright {
         height: 8rem;
     }
     .footer {
         width: 100%;
+        margin-top: 2em;
         #dl_pic {
             width: 48%;
         }

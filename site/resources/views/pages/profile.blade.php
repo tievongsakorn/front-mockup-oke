@@ -10,7 +10,6 @@
         <div class="col-12 col-xl-10" style="padding-top:2em">
             <h2>ศิลปินแนะนำ</h2> 
             <div class="row" style="padding-top : 3em">
-                
                 <div class="col-12 col-xl-4">
                     <div class="pro__pic__box">
                         <img src="/artist_pic/atom.jpg">
@@ -19,8 +18,7 @@
                 <div class="col-12 col-xl-7" style="text-align:left ;">
                     <div class="art__detail">
                         <h1>อะตอม ชนกันต์</h1> 
-                        <p>
-                            ชนกันต์ รัตนอุดม ชื่อเล่น อะตอม  เกิดเมื่อวันที่ 15 ธันวาคม พ.ศ. 2534 
+                        <p> ชนกันต์ รัตนอุดม ชื่อเล่น อะตอม  เกิดเมื่อวันที่ 15 ธันวาคม พ.ศ. 2534 
                             เป็นศิลปินในสังกัดไวท์มิวสิก เริ่มทำเพลงตอนชั้นประถมศึกษาปีที่ 6 ก่อนจะเริ่มจริงจังตอนมัธยมศึกษาตอนปลายที่กรุงเทพคริสเตียนวิทยาลัย 
                             และปล่อยซิงเกิลเปิดตัว ในช่วงต้นปี พ.ศ.2558 ในเพลง พลีส (Please)
                         </p>
@@ -45,15 +43,6 @@
                                 <h5>Good Morning Teacher</h5>
                             </div>
                         </div>
-                        {{-- <div class="col">
-                            <div class="allsong_col">
-                                <div>
-                                    <img src="song/donttell.jpg">
-                                    <a href="#"><img src="/icon/icon-play.png"></a>
-                                </div>
-                                <h5>อย่าบอก</h5>
-                            </div>
-                        </div> --}}
                         <div class="col">
                             <div class="allsong_col">
                                 <div>
@@ -136,8 +125,7 @@
                             </div>
                         </div>
                     </div>
-                
             </div>
     </div>      
-    </div>
+</div>
 @endsection
