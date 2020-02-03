@@ -29,7 +29,7 @@
                 <div id="slide-title" style="text-align :left; padding-left : 0;">
                     <h3>เพลงทั้งหมด
                         <div style="text-align : right;">
-                            <button class="select-btn"> <img src="/icon/icon-addlist.png" height="25px" style="margin-bottom:2px"> เลือกเพลงทั้งหมด</button>
+                            <a href="#" class="select-btn"> <img src="/icon/icon-addlist.png" height="25px" style="margin-bottom:2px"> เลือกเพลงทั้งหมด</a>
                         </div>
                         </h3>  
                 </div>

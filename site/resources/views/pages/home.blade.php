@@ -42,52 +42,52 @@
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="artist_pic/oat.jpg">
+                <a href=""><img class="img__circle" src="artist_pic/oat.jpg"></a>
                 <h5>โอ๊ต ปราโมทย์</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="/artist_pic/palmy.jpg">
+                <a href=""><img class="img__circle" src="/artist_pic/palmy.jpg"></a>
                 <h5>ปาล์มมี่</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide" >
-                <img class="img__circle" src="/artist_pic/da-n.jpg">
+                <a href=""><img class="img__circle" src="/artist_pic/da-n.jpg"></a>
                 <h5>ดา เอ็นโดฟิน</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="/artist_pic/palmy.jpg">
+                <a href=""><img class="img__circle" src="/artist_pic/palmy.jpg"></a>
                 <h5>ปาล์มมี่</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="/artist_pic/ded.jpg">
+                <a href=""><img class="img__circle" src="/artist_pic/ded.jpg"></a>
                 <h5>โปเตโต</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="/artist_pic/labanoon.jpg"> 
+                <a href=""><img class="img__circle" src="/artist_pic/labanoon.jpg"> </a>
                 <h5>ลาบานูน</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="/artist_pic/rach.jpg">
+                <a href=""><img class="img__circle" src="/artist_pic/rach.jpg"></a>
                 <h5>รัชโย</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="/artist_pic/palmy.jpg">
+                <a href=""><img class="img__circle" src="/artist_pic/palmy.jpg"></a>
                 <h5>ปาล์มมี่</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="/artist_pic/tu.jpg">
+                <a href=""><img class="img__circle" src="/artist_pic/tu.jpg"></a>
                 <h5>ตู่ ภพธร</h5>
                 <h6>20 Song</h6>
             </div>
             <div class="art__slide">
-                <img class="img__circle" src="/artist_pic/vitas.JPG">
+                <a href=""><img class="img__circle" src="/artist_pic/vitas.JPG"></a>
                 <h5>วิ ตาส์</h5>
                 <h6>20 Song</h6>
             </div>

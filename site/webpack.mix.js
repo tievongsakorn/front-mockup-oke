@@ -18,3 +18,5 @@ mix.js('resources/js/app.js', 'public/js')
     });
 
 mix.sass('resources/sass/mock.scss','public/css');
+
+mix.copyDirectory('resources/img', 'public/img');
