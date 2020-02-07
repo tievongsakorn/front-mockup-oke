@@ -30,5 +30,8 @@ Route::get('/', function () {
 Route::get('/test' , function(){
     return view('pages.test');
 });
+Route::resources([
+    '/package' => 'UserpackController',
+]);
 
 URL::forceScheme('https');

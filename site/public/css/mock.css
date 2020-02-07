@@ -504,6 +504,47 @@
   }
 }
 
+.user .col-2 .member--pic {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 5px black solid;
+  border-radius: 50%;
+}
+
+.box__package {
+  text-align: left;
+  position: relative;
+  padding: 15px;
+  width: 90%;
+  height: 170px;
+  border: 8px solid #afe2ec;
+  background-color: #e0edf5;
+}
+
+.box__package .row .package--detail h1 {
+  font-weight: 800;
+  font-size: 2ex;
+}
+
+.box__package .box__package--btn {
+  position: absolute;
+  width: 10rem;
+  height: 4rem;
+  padding: 7px;
+  border: yellowgreen solid 2px;
+  border-radius: 30px;
+  background-color: yellowgreen;
+  color: black;
+}
+
+.box__package:hover {
+  opacity: 1;
+  -webkit-transition: 50ms;
+  transition: 50ms;
+}
+
 @font-face {
   font-family: Main_Font;
   font-weight: 600;
@@ -546,6 +587,7 @@ html {
 }
 
 body {
+  height: 100%;
   background-color: #e0edf5;
   background-image: url("/imgs/main__bg.jpg");
   background-repeat: no-repeat;
