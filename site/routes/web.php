@@ -34,4 +34,8 @@ Route::resources([
     '/package' => 'UserpackController',
 ]);
 
+Route::get('/pay' , function(){
+    return view('pages.payment');
+});
+
 URL::forceScheme('https');

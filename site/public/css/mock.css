@@ -509,40 +509,121 @@
   height: 150px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 5px black solid;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
 }
 
+.user .member--detail h1 {
+  font-weight: 400;
+}
+
+.user .member--detail h2 {
+  font-weight: 400;
+  font-size: 1.7em;
+}
+
+.title__package h1 {
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
 .box__package {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+}
+
+.box__package--option {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
   text-align: left;
-  position: relative;
   padding: 15px;
-  width: 90%;
-  height: 170px;
-  border: 8px solid #afe2ec;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 140px;
   background-color: #e0edf5;
+  box-shadow: 0px 0px 23px -8px rgba(0, 0, 0, 0.3);
 }
 
-.box__package .row .package--detail h1 {
-  font-weight: 800;
-  font-size: 2ex;
+.box__package--option .row .package--detail h1 {
+  font-weight: 400;
+  font-size: 34px;
 }
 
-.box__package .box__package--btn {
-  position: absolute;
-  width: 10rem;
-  height: 4rem;
-  padding: 7px;
-  border: yellowgreen solid 2px;
+.box__package--option .row .package--detail h5 {
+  font-weight: 200;
+}
+
+.box__package--option .row .package--price {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.box__package--option .row .package--price h1 {
+  margin-left: auto;
+  margin-right: 1.5em;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+.box__package--option .box__package--btn {
+  border: 2px solid white;
+  padding: 0.7em;
   border-radius: 30px;
-  background-color: yellowgreen;
-  color: black;
+  background-color: #0dd4fb;
+  color: white;
+  text-align: center;
 }
 
-.box__package:hover {
-  opacity: 1;
-  -webkit-transition: 50ms;
-  transition: 50ms;
+.box__package--option .box__package--btn h5 {
+  margin: 0px;
+}
+
+.box__package--option .box__package--btn:hover {
+  opacity: 0.7;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.box__payment {
+  display: block;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 2em;
+}
+
+.form__card h5 {
+  font-weight: 400;
+}
+
+.form-control {
+  height: 3.3em;
+}
+
+.btn-block {
+  height: 3em;
+  margin-top: 15px;
+}
+
+.pay__logo {
+  margin: 8px;
+  margin-bottom: 10px;
+}
+
+.pay__logo img {
+  height: auto;
+  width: 40px;
 }
 
 @font-face {
@@ -1065,6 +1146,7 @@ body {
 }
 
 .footer__copyright {
+  bottom: 0;
   border-top: 1px solid rgba(4, 4, 4, 0.3);
   background-color: #006afe;
   height: 4rem;

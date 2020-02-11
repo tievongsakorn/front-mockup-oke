@@ -1,0 +1,92 @@
+//
+
+$blue-col : #0dd4fb ;
+.user {
+    
+    .col-2 {
+       .member--pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 50%;   
+       } 
+    }
+        .member--detail {
+            h1 {
+                font-weight: 400;
+            }
+            h2 {
+                font-weight: 400;
+                font-size: 1.7em;
+            }
+        }
+    
+}
+.title__package {
+    h1{    
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+}
+.box__package {
+    width: 100%;
+    // border: 3px solid #afe2ec;
+    background-color: rgb(255, 255, 255 , 0.3);
+    padding: 5px;
+}
+.box__package--option {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1em;
+    text-align: left;
+    // position: relative;
+    padding: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 140px;
+    // border: 7px solid $blue-col ;
+    background-color: #e0edf5;
+    box-shadow: 0px 0px 23px -8px rgba(0, 0, 0, 0.3);
+    .row {
+        .package--detail {
+            h1 {
+                font-weight: 400;
+                font-size: 34px;
+            }
+            h5 {
+                font-weight: 200;
+            }
+        }
+        .package--price {
+            display: flex;
+            align-items: center;
+            h1 {
+                margin-left: auto;
+                margin-right: 1.5em;
+                font-weight: 400;
+                font-size: 1.8em;
+            }
+        }
+    }
+    .box__package--btn {
+        border: 2px solid white;
+        padding: 0.7em;
+        border-radius: 30px;
+        background-color: $blue-col;
+        color: white;
+        text-align: center;
+        h5 {
+            margin: 0px;
+        }
+    }
+    .box__package--btn:hover {
+        opacity: 0.7;
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+// .box__package:hover {
+    
+// }

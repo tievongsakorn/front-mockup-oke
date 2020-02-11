@@ -2,6 +2,7 @@
 @import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css';
 
 @import 'profile';
+@import 'package';
 @import 'payment';
 
 @font-face {
@@ -426,6 +427,8 @@ body{
 }
 //ส่วนบาร์CoppyRightล่างสุดของเว็บ
 .footer__copyright {
+
+    bottom: 0;
     border-top: 1px solid rgba(4,4,4,0.3);
     background-color: #006afe;
     height: 4rem;
