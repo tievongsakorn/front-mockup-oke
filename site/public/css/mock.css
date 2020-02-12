@@ -504,7 +504,14 @@
   }
 }
 
-.user .col-2 .member--pic {
+.user {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.user .member--pic {
+  -webkit-box-pack: center;
+          justify-content: center;
   width: 150px;
   height: 150px;
   -o-object-fit: cover;
@@ -515,11 +522,13 @@
 
 .user .member--detail h1 {
   font-weight: 400;
+  text-align: left;
 }
 
 .user .member--detail h2 {
   font-weight: 400;
   font-size: 1.7em;
+  text-align: left;
 }
 
 .title__package h1 {
@@ -528,7 +537,8 @@
 }
 
 .box__package {
-  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
   background-color: rgba(255, 255, 255, 0.3);
   padding: 5px;
 }
@@ -593,6 +603,18 @@
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 576px) {
+  .member--detail h1 {
+    margin-top: 15px;
+    font-size: 28px;
+  }
+
+  .member--detail h2 {
+    font-weight: 400;
+    font-size: 22em;
+  }
+}
+
 .box__payment {
   display: block;
   max-width: 600px;
@@ -603,12 +625,71 @@
   padding-bottom: 2em;
 }
 
-.form__card h5 {
+.title__payment h1 {
   font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.title__payment h3 {
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.form__card h4 {
+  font-weight: 400;
+}
+
+.form__card label h5 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.box__payment--package {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+  text-align: left;
+  padding: 15px;
+  height: 140px;
+  background-color: #e0edf5;
+  box-shadow: 0px 0px 23px -10px rgba(0, 0, 0, 0.3);
+}
+
+.box__payment--package .row .package--detail h1 {
+  font-weight: 400;
+  font-size: 2.1em;
+}
+
+.box__payment--package .row .package--detail h5 {
+  font-weight: 200;
+}
+
+.box__payment--package .row .package--price {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.box__payment--package .row .package--price h1 {
+  margin-left: auto;
+  margin-right: 1.5em;
+  font-weight: 400;
+  font-size: 1.8em;
 }
 
 .form-control {
   height: 3.3em;
+  font-size: 16px;
+}
+
+#card_number {
+  letter-spacing: 2px;
 }
 
 .btn-block {
@@ -617,13 +698,64 @@
 }
 
 .pay__logo {
-  margin: 8px;
   margin-bottom: 10px;
 }
 
 .pay__logo img {
-  height: auto;
-  width: 40px;
+  height: 20px;
+  width: auto;
+}
+
+@media (max-width: 576px) {
+  .box__payment--package {
+    margin-bottom: 0em;
+    text-align: left;
+    padding: 15px;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 140px;
+    box-shadow: 0px 0px 23px -6px rgba(0, 0, 0, 0.5);
+  }
+
+  .box__payment--package .row .package--detail h1 {
+    font-weight: 400;
+    font-size: 1.2em;
+  }
+
+  .box__payment--package .row .package--detail h5 {
+    font-weight: 200;
+    font-size: 1em;
+  }
+
+  .box__payment--package .row .package--price {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .box__payment--package .row .package--price h1 {
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 1.1em;
+  }
+
+  .form__card h4 {
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 17px;
+  }
+
+  .form__card label h5 {
+    font-weight: 300;
+    font-size: 15px;
+  }
+
+  .form-control {
+    height: 2.4em;
+    margin-top: -10px;
+    font-size: 16px;
+  }
 }
 
 @font-face {
@@ -665,6 +797,7 @@
 html {
   box-sizing: border-box;
   overflow-x: hidden;
+  height: 100%;
 }
 
 body {

@@ -2,23 +2,26 @@
 
 $blue-col : #0dd4fb ;
 .user {
-    
-    .col-2 {
+    margin-left: auto;
+    margin-right: auto;
        .member--pic {
+            justify-content: center;
             width: 150px;
             height: 150px;
             object-fit: cover;
             box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
             border-radius: 50%;   
        } 
-    }
+
         .member--detail {
             h1 {
                 font-weight: 400;
+                text-align: left;
             }
             h2 {
                 font-weight: 400;
                 font-size: 1.7em;
+                text-align: left;
             }
         }
     
@@ -30,7 +33,8 @@ $blue-col : #0dd4fb ;
     }
 }
 .box__package {
-    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
     // border: 3px solid #afe2ec;
     background-color: rgb(255, 255, 255 , 0.3);
     padding: 5px;
@@ -87,6 +91,15 @@ $blue-col : #0dd4fb ;
     }
 }
 
-// .box__package:hover {
-    
-// }
+@media (max-width: 576px) {
+    .member--detail {
+        h1 {
+            margin-top: 15px;
+            font-size: 28px;
+        }
+        h2 {
+            font-weight: 400;
+            font-size: 22em;
+        }
+    }
+}
