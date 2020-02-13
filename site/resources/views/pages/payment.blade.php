@@ -21,7 +21,6 @@
                 </div>  
             </div>
         </div>
-
         <div class="col-12" style="padding-top : 2em;">
             <div class="form__card">
                 <h4>ชำระด้วยบัตรเครดิตหรือบัตรเดบิต</h4>
@@ -32,34 +31,32 @@
                 </div>
                 <form action="">
                     <div class="form-row">
-                    <div class="form-group col-12">
-                        <label for="card_number"><h5>เลขบัตร</h5></label>
-                        <input type="text" class="form-control" id="card_number" pattern="[0-9]*" placeholder="XXXX XXXX XXXX XXXX" maxlength="16" required>
-                    </div>
-                    <div class="form-group col-12">
-                        <label for="card_name"><h5>ชื่อ</h5></label>
-                        <input type="text" class="form-control" id="card_name" placeholder="ชื่อที่แสดงบนบัตร"required>
-                    </div>
-                    
-                    <div class="form-group col-6 col-md-4">
-                        <label for="card_month"><h5>เดือน</h5></label>
-                        <select id="card_month" class="form-control" required>
-                          <option>-</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                          <option>6</option>
-                          <option>7</option>
-                          <option>8</option>
-                          <option>9</option>
-                          <option>10</option>
-                          <option>11</option>
-                          <option>12</option>
-
-                        </select>
-                      </div>
+                        <div class="form-group col-12">
+                            <label for="card_number"><h5>เลขบัตร</h5></label>
+                            <input type="text" class="form-control" id="card_number" pattern="[0-9]*" placeholder="XXXX XXXX XXXX XXXX" minlength="12" maxlength="16" required>
+                        </div>
+                        <div class="form-group col-12">
+                            <label for="card_name"><h5>ชื่อ</h5></label>
+                            <input type="text" class="form-control" id="card_name" placeholder="ชื่อที่แสดงบนบัตร"required>
+                        </div>
+                        <div class="form-group col-6 col-md-4">
+                            <label for="card_month"><h5>เดือน</h5></label>
+                            <select id="card_month" class="form-control" required>
+                                <option>-</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                        </div>
                         <div class="form-group col-6 col-md-4">
                             <label for="card_year"><h5>ปี</h5></label>
                             <select id="card_year" class="form-control" required>
@@ -75,18 +72,26 @@
                                 <option>28</option>
                                 <option>29</option>
                             </select>
-                          </div>
-                        <div class="form-group col-6 col-md-4">
-                            <label for="card_cvv"><h5>รหัสความปลอดภัย</h5></label>
-                            <input type="text" class="form-control" id="card_cvv" placeholder="CVV" maxlength="3" required>
+                        </div>
+                        <div class="form-group col-6 col-md-4 cvv">
+                            <label for="card_cvv"><h5>รหัสความปลอดภัย <img src="/icon/cvv_detail.png" id="cvv__icon" class="cvv__icon"></h5></label>
+                            <div id="cvv__detail" class="cvv__detail">
+                                <span><p>รหัสความปลอดภัยหรือ CVV หมายถึงตัวเลขพิเศษ 3 หรือ 4 ตัวที่อยู่ด้านหน้า หรือหลังของบัตร</p></span>
+                            </div>
+                            <input type="text" class="form-control" id="card_cvv" placeholder="CVV" maxlength="4" required>
+                        </div>
+                        <div class="col-12 card__waring">
+                            <p> 
+                                แพ็กเกจสามารถยกเลิกการเป็นสมาชิกได้ทุกเมื่อ Oke จะต่ออายุการเป็นสมาชิกให้โดยอัตโนมัติ 
+                                ระบบจะต่ออายุอัตโนมัติภายใน 24 ชั่วโมงก่อนอายุสมาชิกจะหมดลง และค่าบริการจะถูกหักจากช่องทางการชำระเงินที่บันทึกไว้
+                            </p>
+                        </div>
                     </div>
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary btn-block">ยืนยันการชำระเงิน</button>
-        </form>
-    </div>                                 
-        </div>
+            </div>
+                    <button type="submit" class="btn btn-primary btn-block">ยืนยันการชำระเงิน</button>
+                </form>
+        </div>                                 
     </div>
-
+</div>
 
 @endsection

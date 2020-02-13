@@ -34099,6 +34099,15 @@ $('.owl-carousel').owlCarousel({
     }
   }
 });
+$(document).ready(function () {
+  $("#cvv__detail").hide();
+  $("#cvv__icon").mouseover(function () {
+    $("#cvv__detail").show();
+  });
+  $("#cvv__icon").mouseout(function () {
+    $("#cvv__detail").hide();
+  });
+});
 $('#toggleNav').on('click', function (e) {
   // console.log('click')
   var nav = $('#icon__bar');

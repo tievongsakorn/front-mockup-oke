@@ -644,6 +644,12 @@
   font-size: 18px;
 }
 
+.form__card p {
+  padding-top: 1em;
+  font-weight: 300;
+  font-size: 1em;
+}
+
 .box__payment--package {
   display: -webkit-box;
   display: flex;
@@ -688,13 +694,38 @@
   font-size: 16px;
 }
 
+.cvv img {
+  width: 15px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  opacity: 0.9;
+  padding: 0;
+}
+
+.cvv .cvv__detail {
+  position: relative;
+}
+
+.cvv .cvv__detail p {
+  z-index: 9;
+  padding: 15px;
+  position: absolute;
+  background-color: white;
+  font-size: 0.8em;
+  box-shadow: 0px 0px 30px -5px rgba(0, 0, 0, 0.3);
+}
+
+.cvv img:hover {
+  opacity: 0.7;
+}
+
 #card_number {
   letter-spacing: 2px;
 }
 
 .btn-block {
+  margin-top: 1em;
   height: 3em;
-  margin-top: 15px;
 }
 
 .pay__logo {
@@ -749,6 +780,10 @@
   .form__card label h5 {
     font-weight: 300;
     font-size: 15px;
+  }
+
+  .form__card p {
+    font-size: 0.8em;
   }
 
   .form-control {

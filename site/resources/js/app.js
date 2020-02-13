@@ -31,6 +31,15 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+$(document).ready(function() {
+    $("#cvv__detail").hide();
+    $( "#cvv__icon" ).mouseover(function(){
+        $("#cvv__detail").show();
+    });
+    $( "#cvv__icon" ).mouseout(function(){
+        $("#cvv__detail").hide();
+    });
+});
 $('#toggleNav').on('click', (e) => {
     // console.log('click')
     let nav = $('#icon__bar')
@@ -64,3 +73,4 @@ $('#toggleNav').on('click', (e) => {
         })
     }
 })
+

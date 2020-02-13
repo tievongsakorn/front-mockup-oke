@@ -22,47 +22,6 @@
     <script src='https://rawgit.com/Wlada/vue-carousel-3d/master/dist/vue-carousel-3d.min.js'></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
-{{-- <script>
-    $(document).ready(function () {
-        var scw = window.screen.width ;
-        var welcomePage = "https://mockupoka.test/";  
-      if (window.location.href == welcomePage) {
-        if (scw <1100) {
-            //EmtyeMomentWhenScreenWidth>1100
-        }
-        else {
-            navbutton();
-        }
-      }
-    });
-function navbutton () {
-    var nav = document.getElementById("icon__bar");
-    var scw = window.screen.width ;
-    if (nav.style.visibility == 'hidden') {
-        if (scw <576) {
-            document.getElementById("mySidenav").style.width = "70%";
-            // document.getElementById("navspace").style.transform = "translateX(0)";
-        } 
-        else {
-            document.getElementById("mySidenav").style.width = "70px";
-            document.getElementById("navspace").style.transition = "0.7s";
-            // document.getElementById("").style.paddingLeft = "70px";
-        }
-        document.getElementById("navspace").style.transform = "translateX(70px)";
-        document.getElementById("icon__bar").style.opacity = "1";
-        document.getElementById("icon__bar").style.visibility = "visible";
-        document.getElementById("icon__bar").style.transition = "1.2s";
-    }
-    else {
-        document.getElementById("icon__bar").style.visibility = "hidden";
-        document.getElementById("icon__bar").style.opacity = "0";
-        document.getElementById("mySidenav").style.width = "0";
-        // document.getElementById("navspace").style.paddingLeft= "0";
-        document.getElementById("navspace").style.transition = "0.5s";
-        document.getElementById("navspace").style.transform = "translateX(0)";
-        document.getElementById("icon__bar").style.transition = "0.1s";
-    }
-}
-</script> --}}
 </body>
+
 </html>
