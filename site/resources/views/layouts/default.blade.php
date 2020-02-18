@@ -5,10 +5,41 @@
    @include('includes.head')
 </head>
 <body>
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title" id="exampleModalCenterTitle">Login</h1>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+               <div class="form-group">
+                 <label for="exampleInputEmail1">Username</label>
+                 <input type="text" class="form-control" id="username" placeholder="enter_email@example.com">
+               </div>
+               <div class="form-group">
+                 <label for="password1">Password</label>
+                 <input type="password" class="form-control" id="password" placeholder="********">
+               </div>
+               <p>ใช้ Username / Password เดียวกับ 3BB Member</p>
+               <button type="submit" class="btn btn-primary btn-block">Submit</button>
+             </form>
+               <a href="#">Forget Password?</a>
+             <div class="modal-footer">
+               <p>Don't have an account? <a href="#">Sing up</a></p>
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
        @include('includes.nav')
-
+      
        <div id="navspace">     
-
+         
        @yield('content')
 
        @include('includes.footer')

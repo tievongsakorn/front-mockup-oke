@@ -6,7 +6,7 @@
         </form>
     </div>
 <div id="button">
-    <button class="login-bt">เข้าสู่ระบบ</button>
+    <button data-toggle="modal" data-target="#exampleModalCenter" class="login-bt">เข้าสู่ระบบ</button>
     <button class="regis-bt">สมัครสมาชิก</button>
 </div>
 </div>

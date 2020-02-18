@@ -13,8 +13,18 @@ class UserpackController extends Controller
 
     public function store(Request $request)
     {
-        $packno = $request->input('package'); 
+        $card = (
+            [
+                'number' => $request->input('card_number'),
+                'name' => $request->input('card_name'),
+                'month' => $request->input('card_month'),
+                'year' => $request->input('card_year'),
+                'cvv' => $request->input('card_cvv'),
+            ]
+        );
 
-        dd($packno) ;
+        // $replaced = preg_replace_array('/:[a-z_]+/', ['8:30', '9:00'], $card['number']);
+
+        dd($card['number']);
     }
 }

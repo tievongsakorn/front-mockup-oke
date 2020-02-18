@@ -4,7 +4,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6" style="padding-left:0px;">
-                    <img src="imgs/b_logo.png" alt="">
+                    <img src="/imgs/b_logo.png" alt="">
                     <h3>ดาวน์โหลดแอปพลิเคชั่น</h3>
                     <a href="#"><img id="dl_pic" src="/imgs/dl-ios.png" width="140px"></a>
                     <a href="#"><img id="dl_pic" src="/imgs/dl-an.png" width="140px"></a>

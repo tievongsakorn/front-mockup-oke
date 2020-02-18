@@ -1,11 +1,11 @@
 @extends('layouts.default')
 @section('content') 
 <div class="container" style="padding-top:80px;">
-    <div class="col-12 title__payment" style="padding-bottom : 2em ; padding-top:2em ;">
+    <div class="col-12 title__payment">
         <h1 style="text-align :center;">การชำระเงิน</h1>
     </div>
     <div class="row box__payment">
-        <div class="col-12 title__payment" style="padding-bottom : 2em ; padding-top:2em ;">
+        <div class="col-12 title__payment">
             <h3 style="text-align :center;">แพ็กเกจของคุณ</h3>
         </div>
         <div class="col-12" align="center">
@@ -22,26 +22,27 @@
             </div>
         </div>
         <div class="col-12" style="padding-top : 2em;">
-            <div class="form__card">
+            <div class="form__card--box">
                 <h4>ชำระด้วยบัตรเครดิตหรือบัตรเดบิต</h4>
                 <div class="pay__logo">
                     <img src="/icon/visa.png">
                     <img src="/icon/master.png">
                     <img src="/icon/jcb.png">
                 </div>
-                <form action="">
+                <form action="{{action('UserpackController@store')}}" id="form_card" method="POST">
+                    {{ csrf_field() }}
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label for="card_number"><h5>เลขบัตร</h5></label>
-                            <input type="text" class="form-control" id="card_number" pattern="[0-9]*" placeholder="XXXX XXXX XXXX XXXX" minlength="12" maxlength="16" required>
+                            <input type="text" class="form-control" name="card_number" id="card_number"  placeholder="XXXX XXXX XXXX XXXX" minlength="12"required>
                         </div>
                         <div class="form-group col-12">
                             <label for="card_name"><h5>ชื่อ</h5></label>
-                            <input type="text" class="form-control" id="card_name" placeholder="ชื่อที่แสดงบนบัตร"required>
+                            <input type="text" class="form-control" name="card_name" id="card_name" placeholder="ชื่อที่แสดงบนบัตร"required>
                         </div>
                         <div class="form-group col-6 col-md-4">
                             <label for="card_month"><h5>เดือน</h5></label>
-                            <select id="card_month" class="form-control" required>
+                            <select name="card_month" id="card_month" class="form-control" required>
                                 <option>-</option>
                                 <option>01</option>
                                 <option>02</option>
@@ -59,7 +60,7 @@
                         </div>
                         <div class="form-group col-6 col-md-4">
                             <label for="card_year"><h5>ปี</h5></label>
-                            <select id="card_year" class="form-control" required>
+                            <select name="card_year" id="card_year" class="form-control" required>
                                 <option>-</option>
                                 <option>20</option>
                                 <option>21</option>
@@ -78,7 +79,7 @@
                             <div id="cvv__detail" class="cvv__detail">
                                 <span><p>รหัสความปลอดภัยหรือ CVV หมายถึงตัวเลขพิเศษ 3 หรือ 4 ตัวที่อยู่ด้านหน้า หรือหลังของบัตร</p></span>
                             </div>
-                            <input type="text" class="form-control" id="card_cvv" placeholder="CVV" maxlength="4" required>
+                            <input type="text" class="form-control" name="card_cvv" id="card_cvv" placeholder="CVV" maxlength="4" required>
                         </div>
                         <div class="col-12 card__waring">
                             <p> 

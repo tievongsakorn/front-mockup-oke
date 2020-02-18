@@ -1,0 +1,36 @@
+.modal-content {
+    border-radius: 2em;
+    padding: 1.5em;
+    .modal-header {
+        border: none;
+    }
+    .modal-body {
+        .form-control {
+            height: 3em;
+            border: none;
+            padding: 0;
+            border-bottom: 1px solid rgb(150, 150, 150);
+            border-radius: 0;
+        }
+        .form-control:focus {
+            box-shadow: none;
+        }
+        p {
+            text-align: center;
+            padding-top: 2em;
+        }
+        .btn {
+            border-radius: 50px;
+        }
+        a {
+            text-align: center;
+            margin-top: 1em;
+        }
+    }
+    .modal-footer {
+        border: none;
+        p {
+            text-align: center;
+        }
+    }  
+}

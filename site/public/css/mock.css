@@ -628,11 +628,15 @@
 .title__payment h1 {
   font-weight: 400;
   letter-spacing: 2px;
+  padding-top: 1em;
+  padding-bottom: 0.7em;
 }
 
 .title__payment h3 {
   font-weight: 400;
   letter-spacing: 1px;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .form__card h4 {
@@ -719,7 +723,7 @@
   opacity: 0.7;
 }
 
-#card_number {
+.card_number {
   letter-spacing: 2px;
 }
 
@@ -791,6 +795,49 @@
     margin-top: -10px;
     font-size: 16px;
   }
+}
+
+.modal-content {
+  border-radius: 2em;
+  padding: 1.5em;
+}
+
+.modal-content .modal-header {
+  border: none;
+}
+
+.modal-content .modal-body .form-control {
+  height: 3em;
+  border: none;
+  padding: 0;
+  border-bottom: 1px solid #969696;
+  border-radius: 0;
+}
+
+.modal-content .modal-body .form-control:focus {
+  box-shadow: none;
+}
+
+.modal-content .modal-body p {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.modal-content .modal-body .btn {
+  border-radius: 50px;
+}
+
+.modal-content .modal-body a {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.modal-content .modal-footer {
+  border: none;
+}
+
+.modal-content .modal-footer p {
+  text-align: center;
 }
 
 @font-face {
