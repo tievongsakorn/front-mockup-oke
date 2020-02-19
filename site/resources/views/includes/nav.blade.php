@@ -6,8 +6,8 @@
         </form>
     </div>
 <div id="button">
-    <button data-toggle="modal" data-target="#exampleModalCenter" class="login-bt">เข้าสู่ระบบ</button>
-    <button class="regis-bt">สมัครสมาชิก</button>
+    <button data-toggle="modal" data-target="#LogginModal" class="login-bt">เข้าสู่ระบบ</button>
+    <button data-toggle="modal" data-target="#Expire_alert" class="regis-bt" >สมัครสมาชิก</button>
 </div>
 </div>
 <div id="mySidenav" class="sidenav">

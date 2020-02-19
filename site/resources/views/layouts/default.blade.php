@@ -5,45 +5,17 @@
    @include('includes.head')
 </head>
 <body>
-   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title" id="exampleModalCenterTitle">Login</h1>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-               <div class="form-group">
-                 <label for="exampleInputEmail1">Username</label>
-                 <input type="text" class="form-control" id="username" placeholder="enter_email@example.com">
-               </div>
-               <div class="form-group">
-                 <label for="password1">Password</label>
-                 <input type="password" class="form-control" id="password" placeholder="********">
-               </div>
-               <p>ใช้ Username / Password เดียวกับ 3BB Member</p>
-               <button type="submit" class="btn btn-primary btn-block">Submit</button>
-             </form>
-               <a href="#">Forget Password?</a>
-             <div class="modal-footer">
-               <p>Don't have an account? <a href="#">Sing up</a></p>
-             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-       @include('includes.nav')
-      
-       <div id="navspace">     
-         
-       @yield('content')
 
-       @include('includes.footer')
-       </div>
+      @include('includes.modal')
+
+      @include('includes.nav')
+      
+      <div id="navspace">     
+         
+        @yield('content')
+ 
+        @include('includes.footer')
+      </div>
        
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -54,5 +26,9 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
-
+<script>
+  $('#view_pass_btn').on('click', function(){
+    console.log('hi');
+  })
+</script>
 </html>

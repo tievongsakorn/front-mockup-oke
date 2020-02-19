@@ -24,7 +24,7 @@
             <div class="col-12 title__package" style="padding-bottom : 2em ; padding-top:2em ;">
                 <h1 style="text-align : center;">แพ็กเกจสมาชิกแบบรายเดือน</h1>
             </div>
-                <div class="col-12" align="center">
+                {{-- <div class="col-12" align="center">
                     <div class="box__package--option">
                         <div class="row">
                             <div class="col-7 package--detail">
@@ -76,6 +76,17 @@
                                 </form>
                             </div>
                         </div>  
+                    </div>
+                </div> --}}
+                {{-- ------------------ยืมใช้พื้นที่ในการใส่ปุ่มเพื่อการเปิด Modal----------------------- --}}
+                <div class="col-12" align="center">
+                    <div class="box__package--option">
+                    <div class="col " style="flex-grow: 0;">
+                        <button data-toggle="modal" data-target="#LogginModal" class="btn btn-warning">เข้าสู่ระบบ</button>
+                        <button data-toggle="modal" data-target="#Expire_alert" class="btn btn-warning">หมดอายุ</button>
+                        <button data-toggle="modal" data-target="#login_alert" class="btn btn-danger">กรุณาเข้า</button>
+                        <button data-toggle="modal" data-target="#OnlyTBB_alert" class="btn btn-warning">สิทธิ์พิเศษ</button>
+                    </div>
                     </div>
                 </div>
             </div>
