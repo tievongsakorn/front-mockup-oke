@@ -39,6 +39,7 @@ $(document).ready(function() {
     $( "#cvv__icon" ).mouseout(function(){
         $("#cvv__detail").hide();
     });
+    
 });
 $('#toggleNav').on('click', (e) => {
     // console.log('click')
@@ -73,4 +74,6 @@ $('#toggleNav').on('click', (e) => {
         })
     }
 })
+
+
 

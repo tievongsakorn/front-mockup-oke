@@ -830,12 +830,13 @@
 }
 
 .login .modal-content .modal-header .close {
+  outline: none;
   font-size: 3em;
   font-weight: 300;
 }
 
 .login .modal-content .modal-body {
-  padding: 3.5rem;
+  padding: 3.3rem;
 }
 
 .login .modal-content .modal-body .form-control {
@@ -850,17 +851,10 @@
   box-shadow: none;
 }
 
-.login .modal-content .modal-body .password__input {
-  background-image: url("/icon/icon-view-pass.png");
-  background-repeat: no-repeat;
-  background-position: right;
-}
-
 .login .modal-content .modal-body .input-group-text {
   border: none;
   background: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  cursor: pointer;
 }
 
 .login .modal-content .modal-body p {
@@ -901,6 +895,7 @@
 }
 
 .expire .expire__content .modal-header .close {
+  outline: none;
   font-size: 3em;
   font-weight: 300;
 }
@@ -919,17 +914,22 @@
 
 .expire .expire__content .modal-body img {
   width: auto;
-  height: 130px;
+  height: 100%;
+  max-height: 110px;
   margin: 1.3em;
   margin-top: -1em;
 }
 
 .expire .expire__content .modal-body h2 {
   font-weight: 600;
+  margin-bottom: 0.35em;
+  margin-top: 0.35em;
 }
 
 .expire .expire__content .modal-body h3 {
-  padding-top: 0.5em;
+  line-height: 1.5em;
+  font-size: 1.65em;
+  font-weight: 300;
   text-align: center;
   color: #007bff;
 }
@@ -951,12 +951,13 @@
 }
 
 .OnlyTBB .OnlyTBB__content .modal-header .close {
+  outline: none;
   font-size: 3em;
   font-weight: 300;
 }
 
 .OnlyTBB .OnlyTBB__content .modal-body {
-  padding: 1em;
+  padding: 0em 0em 1em 0em;
   padding-top: 0;
   display: -webkit-box;
   display: flex;
@@ -969,30 +970,130 @@
 
 .OnlyTBB .OnlyTBB__content .modal-body img {
   width: auto;
-  height: 130px;
+  height: 120px;
   margin: 1.3em;
   margin-top: -1em;
 }
 
 .OnlyTBB .OnlyTBB__content .modal-body h2 {
-  font-size: 1.8em;
+  white-space: nowrap;
+  font-size: 2em;
   font-weight: 600;
+  margin-bottom: 0.5em;
 }
 
-.OnlyTBB .OnlyTBB__content .modal-body h3 {
+.OnlyTBB .OnlyTBB__content .modal-body h4 {
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .OnlyTBB .OnlyTBB__content .modal-body .Tbb__callcenter {
   font-weight: 400;
   text-align: center;
   color: #007bff;
+  margin-bottom: 1em;
 }
 
 .OnlyTBB .OnlyTBB__content .modal-body .btn {
+  width: 85%;
   border-radius: 1.5em;
   font-weight: 500;
   font-size: 1.3em;
+}
+
+.login_alert .modal-content {
+  border-radius: 2em;
+  padding: 1.5em;
+}
+
+.login_alert .modal-header {
+  padding: 0;
+  border: none;
+}
+
+.login_alert .modal-header .close {
+  outline: none;
+  font-size: 3em;
+  font-weight: 300;
+}
+
+.login_alert .modal-body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.login_alert .modal-body img {
+  width: auto;
+  height: 120px;
+  margin: 1.3em;
+  margin-top: -1em;
+}
+
+.login_alert .modal-body h2 {
+  white-space: nowrap;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+
+.login_alert .modal-body .btn {
+  width: 85%;
+  border-radius: 1.5em;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+.login_alert .modal-body .login__close--btn {
+  border: none;
+  background: none;
+  color: #007bff;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-top: 1.2em;
+  margin-bottom: -0.7em;
+  outline: none;
+}
+
+@media (max-width: 767.98px) {
+  .login .modal-content .modal-body {
+    padding: 15px;
+  }
+
+  .login .modal-content .modal-body .btn {
+    font-size: 1em;
+  }
+
+  .expire .modal-content .modal-body h2 {
+    text-align: center;
+    white-space: inherit;
+    font-size: 1.8em;
+  }
+
+  .expire .modal-content .modal-body h3 {
+    font-size: 1.3em;
+  }
+
+  .login_alert .modal-content .modal-body h2 {
+    white-space: inherit;
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .OnlyTBB .modal-content .modal-body h2 {
+    text-align: center;
+    white-space: inherit;
+    font-size: 1.5em;
+  }
+
+  .OnlyTBB .modal-content .modal-body h4 {
+    font-size: 1.3em;
+  }
 }
 
 @font-face {

@@ -82,10 +82,10 @@
                 <div class="col-12" align="center">
                     <div class="box__package--option">
                     <div class="col " style="flex-grow: 0;">
-                        <button data-toggle="modal" data-target="#LogginModal" class="btn btn-warning">เข้าสู่ระบบ</button>
-                        <button data-toggle="modal" data-target="#Expire_alert" class="btn btn-warning">หมดอายุ</button>
-                        <button data-toggle="modal" data-target="#login_alert" class="btn btn-danger">กรุณาเข้า</button>
-                        <button data-toggle="modal" data-target="#OnlyTBB_alert" class="btn btn-warning">สิทธิ์พิเศษ</button>
+                        <button data-toggle="modal" data-target="#LogginModal" class="btn btn-success">เข้าสู่ระบบ</button>
+                        <button data-toggle="modal" data-target="#Expire_alert" class="btn btn-success">หมดอายุ</button>
+                        <button data-toggle="modal" data-target="#login_alert" class="btn btn-success">กรุณาเข้า</button>
+                        <button data-toggle="modal" data-target="#OnlyTBB_alert" class="btn btn-success">สิทธิ์พิเศษ</button>
                     </div>
                     </div>
                 </div>

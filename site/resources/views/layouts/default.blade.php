@@ -27,8 +27,14 @@
     <script src="{{ mix('js/app.js') }}"></script>
 </body>
 <script>
-  $('#view_pass_btn').on('click', function(){
-    console.log('hi');
+ $('#view_pass_btn').on('mousedown mouseup', function(){
+    // console.log('That work');
+    let pass = document.getElementById("password");
+    if (pass.type === "password") {
+      pass.type = "text";
+     } else {
+      pass.type = "password";
+     }
   })
 </script>
 </html>

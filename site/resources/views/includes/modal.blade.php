@@ -21,18 +21,20 @@
                         <label>Username</label>
                         <input type="email" class="form-control" placeholder="enter_email@example.com">
                     </div>
-                    <div class="form-group">
+                    {{-- <div class="form-group">
                         <label>Password</label>
                         <input type="password" id="password" class="form-control password__input" placeholder="********">
                         <span></span>
-                    </div>
-                    {{-- <label>Password</label>
-                    <div class="input-group">
-                    <input type="password" class="form-control " placeholder="********">
-                    <div class="input-group-append">
-                        <span class="input-group-text" id="view_pass_btn"><img src="/icon/icon-view-pass.png" alt=""></span>
-                    </div>
                     </div> --}}
+                    <label>Password</label>
+                    <div class="input-group">
+                    <input type="password" class="form-control " id="password" placeholder="********">
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <img id="view_pass_btn" src="/icon/icon-view-pass.png">
+                        </span>
+                    </div>
+                    </div>
                     <p>ใช้ Username / Password เดียวกับ 3BB Member</p>
                     <button type="submit" class="btn btn-primary btn-block">Login</button>
                     <div class="pass__forget col-12">
@@ -73,12 +75,31 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="OnlyTBB__body modal-body">
+            <div class="modal-body">
                     <img src="/icon/icon-information.png">
                     <h2>สิทธิพิเศษสำหรับลูกค้า 3BB เท่านั้น</h2>
-                    <h3>สอบถามรายละเอียดเพิ่มเติมที่</h3>
-                    <h3 class="Tbb__callcenter" >Call center 3BB โทร 1530</h3>
+                    <h4 class="OnlyTBB__askmore">สอบถามรายละเอียดเพิ่มเติมที่</h4>
+                    <h4 class="Tbb__callcenter" >Call center 3BB โทร 1530</h4>
                     <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
+            </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="modal fade login_alert" id="login_alert" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="login__content modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                    <img src="/icon/icon-information.png">
+                    <h2>กรุณาเข้าสู่ระบบก่อนทำรายการค่ะ</h2>
+                    <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
+                    <button class="login__close--btn" data-dismiss="modal">ปิด</button>
             </div>
       </div>
     </div>

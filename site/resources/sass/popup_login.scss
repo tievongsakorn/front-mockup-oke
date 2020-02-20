@@ -1,3 +1,4 @@
+
 .login {
     .modal-content {
         border-radius: 2em;
@@ -26,12 +27,13 @@
                 }
             }
             .close {
+                outline: none;
                 font-size: 3em ;
                 font-weight: 300;
             }
         }
         .modal-body {
-            padding: 3.5rem;
+            padding: 3.3rem;
             .form-control {
                 height: 3em;
                 border: none;
@@ -42,16 +44,15 @@
             .form-control:focus {
                 box-shadow: none;
             }
-            .password__input {
-                background-image: url('/icon/icon-view-pass.png');
-                background-repeat: no-repeat;
-                background-position: right;
-            }
+            // .password__input {
+            //     background-image: url('/icon/icon-view-pass.png');
+            //     background-repeat: no-repeat;
+            //     background-position: right;
+            // }
             .input-group-text {
                 border: none;
                 background: none;
                 border-bottom: 1px solid rgb(0, 0, 0 ,0.3);
-                cursor: pointer;
             }
             p {
                 text-align: center;
@@ -88,6 +89,7 @@
             padding: 0;
             border: none;
             .close {
+                outline: none;
                 font-size: 3em ;
                 font-weight: 300;
             }
@@ -100,15 +102,20 @@
             align-items: center;
             img {
                 width: auto;
-                height: 130px;
+                height: 100%;
+                max-height: 110px;
                 margin: 1.3em;
                 margin-top: -1em;
             }
             h2 {
                 font-weight: 600;
+                margin-bottom: 0.35em;
+                margin-top: 0.35em;
             }
             h3 {
-                padding-top: 0.5em;
+                line-height: 1.5em;
+                font-size: 1.65em;
+                font-weight: 300;
                 text-align: center;
                 color: #007bff;;
             }
@@ -119,7 +126,6 @@
             }
         }
     }
-
 }
 
 .OnlyTBB {
@@ -130,35 +136,41 @@
             padding: 0;
             border: none;
             .close {
+                outline: none;
                 font-size: 3em ;
                 font-weight: 300;
             }
         }
         .modal-body {
-            padding: 1em;
+            padding: 0em 0em 1em 0em;
             padding-top: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             img {
                 width: auto;
-                height: 130px;
+                height: 120px;
                 margin: 1.3em;
                 margin-top: -1em;
             }
             h2 {
-                font-size: 1.8em;
+                white-space: nowrap;
+                font-size: 2em;
                 font-weight: 600;
+                margin-bottom: 0.5em;
             }
-            h3 {
+            h4 {
                 font-weight: 400;
+                margin-bottom: 0;
             }
             .Tbb__callcenter {
                 font-weight: 400;
                 text-align: center;
                 color: #007bff;;
+                margin-bottom: 1em;
             }
             .btn {
+                width: 85%;
                 border-radius: 1.5em;
                 font-weight: 500;
                 font-size: 1.3em;
@@ -166,3 +178,106 @@
         }
     }
 }
+
+.login_alert {
+    .modal-content {
+        border-radius: 2em;
+        padding: 1.5em;
+    }
+    .modal-header {
+        padding: 0;
+        border: none;
+        .close {
+            outline: none;
+            font-size: 3em ;
+            font-weight: 300;
+        }
+    }
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: auto;
+            height: 120px;
+            margin: 1.3em;
+            margin-top: -1em;
+        }
+        h2 {
+            white-space: nowrap;
+            font-size: 2em;
+            font-weight: 500;
+            margin-bottom: 0.5em;
+            margin-top: 1em;
+        }
+        .btn {
+            width: 85%;
+            border-radius: 1.5em;
+            font-weight: 500;
+            font-size: 1.3em;
+        }
+        .login__close--btn {
+            border: none;
+            background: none;
+            color: #007bff;
+            font-size: 1.3em;
+            font-weight: 400;
+            margin-top: 1.2em;
+            margin-bottom: -0.7em;
+            outline: none;
+        }
+    }
+}
+
+@media (max-width: 767.98px) { 
+    .login {
+        .modal-content {
+            .modal-body {
+                padding: 15px;
+                .btn {
+                    font-size: 1em;
+                }
+            }
+            
+        }
+    }
+    .expire {
+        .modal-content {
+            .modal-body {
+                h2 {
+                    text-align: center;
+                    white-space: inherit;
+                    font-size: 1.8em;
+                }
+                h3 {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+    .login_alert {
+        .modal-content {
+            .modal-body {
+                h2 {
+                    white-space: inherit;
+                    text-align: center;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+    .OnlyTBB {
+        .modal-content {
+            .modal-body {
+                h2 {
+                    text-align: center;
+                    white-space: inherit;
+                    font-size: 1.5em;
+                }
+                h4 {
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+ }
