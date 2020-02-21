@@ -1079,10 +1079,22 @@
     font-size: 1.3em;
   }
 
+  .expire .modal-content .modal-body .btn {
+    font-size: 1em;
+  }
+
   .login_alert .modal-content .modal-body h2 {
     white-space: inherit;
     text-align: center;
     font-size: 1.5em;
+  }
+
+  .login_alert .modal-content .modal-body .btn {
+    font-size: 1em;
+  }
+
+  .login_alert .modal-content .modal-body .login__close--btn {
+    font-size: 1em;
   }
 
   .OnlyTBB .modal-content .modal-body h2 {
@@ -1093,6 +1105,10 @@
 
   .OnlyTBB .modal-content .modal-body h4 {
     font-size: 1.3em;
+  }
+
+  .OnlyTBB .modal-content .modal-body .btn {
+    font-size: 1em;
   }
 }
 

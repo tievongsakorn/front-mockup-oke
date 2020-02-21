@@ -11,9 +11,9 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/modal', function () {
+    return view('pages.modal');
+});
 
 Route::get('/oldmain', function () {
     return view('pages.index');

@@ -25,6 +25,6 @@ class UserpackController extends Controller
 
         // $replaced = preg_replace_array('/:[a-z_]+/', ['8:30', '9:00'], $card['number']);
 
-        dd($card['number']);
+        dd($card);
     }
 }

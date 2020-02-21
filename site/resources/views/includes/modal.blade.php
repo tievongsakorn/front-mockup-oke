@@ -58,10 +58,10 @@
                 </button>
             </div>
             <div class="expire__body modal-body">
-                    <img src="/icon/icon-information.png">
-                    <h2>สิทธิ์ของคุณหมดอายุ</h2>
-                    <h3>กรุณาติดต่อ Call center 3BB <br>โทร 1530</h3>
-                    <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
+                <img src="/icon/icon-information.png">
+                <h2>สิทธิ์ของคุณหมดอายุ</h2>
+                <h3>กรุณาติดต่อ Call center 3BB <br>โทร 1530</h3>
+                <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
             </div>
       </div>
     </div>
@@ -76,16 +76,15 @@
                 </button>
             </div>
             <div class="modal-body">
-                    <img src="/icon/icon-information.png">
-                    <h2>สิทธิพิเศษสำหรับลูกค้า 3BB เท่านั้น</h2>
-                    <h4 class="OnlyTBB__askmore">สอบถามรายละเอียดเพิ่มเติมที่</h4>
-                    <h4 class="Tbb__callcenter" >Call center 3BB โทร 1530</h4>
-                    <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
+                <img src="/icon/icon-information.png">
+                <h2>สิทธิพิเศษสำหรับลูกค้า 3BB เท่านั้น</h2>
+                <h4 class="OnlyTBB__askmore">สอบถามรายละเอียดเพิ่มเติมที่</h4>
+                <h4 class="Tbb__callcenter" >Call center 3BB โทร 1530</h4>
+                <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
             </div>
       </div>
     </div>
 </div>
-
 
 <div class="modal fade login_alert" id="login_alert" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-dialog-centered" role="document">
@@ -96,10 +95,10 @@
                 </button>
             </div>
             <div class="modal-body">
-                    <img src="/icon/icon-information.png">
-                    <h2>กรุณาเข้าสู่ระบบก่อนทำรายการค่ะ</h2>
-                    <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
-                    <button class="login__close--btn" data-dismiss="modal">ปิด</button>
+                <img src="/icon/icon-information.png">
+                <h2>กรุณาเข้าสู่ระบบก่อนทำรายการค่ะ</h2>
+                <button class="btn btn-primary btn-block" data-target="#LogginModal">ตกลง</button>
+                <button class="login__close--btn" data-dismiss="modal">ปิด</button>
             </div>
       </div>
     </div>
