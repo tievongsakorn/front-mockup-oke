@@ -40,7 +40,16 @@ $(document).ready(function() {
         $("#cvv__detail").hide();
     });
     
+    
 });
+$('#view_pass_btn').on('mousedown mouseup', function(){
+        let pass = document.getElementById("password");
+        if (pass.type === "password") {
+          pass.type = "text";
+         } else {
+          pass.type = "password";
+         }
+      })
 $('#toggleNav').on('click', (e) => {
     // console.log('click')
     let nav = $('#icon__bar')
