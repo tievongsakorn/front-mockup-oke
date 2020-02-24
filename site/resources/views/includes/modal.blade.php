@@ -97,7 +97,7 @@
             <div class="modal-body">
                 <img src="/icon/icon-information.png">
                 <h2>กรุณาเข้าสู่ระบบก่อนทำรายการค่ะ</h2>
-                <button class="btn btn-primary btn-block" data-target="#LogginModal">ตกลง</button>
+                <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
                 <button class="login__close--btn" data-dismiss="modal">ปิด</button>
             </div>
       </div>
