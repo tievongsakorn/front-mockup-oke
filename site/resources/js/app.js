@@ -39,8 +39,6 @@ $(document).ready(function() {
     $( "#cvv__icon" ).mouseout(function(){
         $("#cvv__detail").hide();
     });
-    
-    
 });
 $('#view_pass_btn').on('mousedown mouseup', function(){
         let pass = document.getElementById("password");
