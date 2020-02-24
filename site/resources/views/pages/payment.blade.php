@@ -34,15 +34,15 @@
                     <div class="form-row">
                         <div class="form-group col-12">
                             <label for="card_number"><h5>เลขบัตร</h5></label>
-                            <input type="text" class="form-control" name="card_number" id="card_number"  placeholder="XXXX XXXX XXXX XXXX" minlength="12"required>
+                            <input type="text" class="form-control" name="card_number" id="card_number"  placeholder="XXXX XXXX XXXX XXXX" minlength="12" maxlength="16">
                         </div>
                         <div class="form-group col-12">
                             <label for="card_name"><h5>ชื่อ</h5></label>
-                            <input type="text" class="form-control" name="card_name" id="card_name" placeholder="ชื่อที่แสดงบนบัตร"required>
+                            <input type="text" class="form-control" name="card_name" id="card_name" placeholder="ชื่อที่แสดงบนบัตร">
                         </div>
                         <div class="form-group col-6 col-md-4">
                             <label for="card_month"><h5>เดือน</h5></label>
-                            <select name="card_month" id="card_month" class="form-control" required>
+                            <select name="card_month" id="card_month" class="form-control">
                                 <option>-</option>
                                 <option>01</option>
                                 <option>02</option>
@@ -60,7 +60,7 @@
                         </div>
                         <div class="form-group col-6 col-md-4">
                             <label for="card_year"><h5>ปี</h5></label>
-                            <select name="card_year" id="card_year" class="form-control" required>
+                            <select name="card_year" id="card_year" class="form-control">
                                 <option>-</option>
                                 <option>20</option>
                                 <option>21</option>
@@ -79,7 +79,7 @@
                             <div id="cvv__detail" class="cvv__detail">
                                 <span><p>รหัสความปลอดภัยหรือ CVV หมายถึงตัวเลขพิเศษ 3 หรือ 4 ตัวที่อยู่ด้านหน้า หรือหลังของบัตร</p></span>
                             </div>
-                            <input type="text" class="form-control" name="card_cvv" id="card_cvv" placeholder="CVV" maxlength="4" required>
+                            <input type="text" class="form-control" name="card_cvv" id="card_cvv" placeholder="CVV" maxlength="4">
                         </div>
                         <div class="col-12 card__waring">
                             <p> 
