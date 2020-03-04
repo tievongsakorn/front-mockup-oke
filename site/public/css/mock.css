@@ -1112,6 +1112,118 @@
   }
 }
 
+.playlist__all--page {
+  padding-top: 7em;
+}
+
+.playlist__all--page .playli_slide {
+  margin: 0;
+}
+
+.pic__playli--container {
+  margin-left: 3em;
+}
+
+.pic__playli--container h2 {
+  margin-bottom: 1em;
+}
+
+.playlist__detail--pic {
+  padding-top: 7em;
+  background-color: white;
+  box-shadow: 3px 3px 5px -1px white;
+  height: 650px;
+}
+
+.playlist__detail--pic .detail__pic--big {
+  margin-left: 3em;
+}
+
+.playlist__detail--pic .detail__pic--big img {
+  height: 430px;
+  width: 430px;
+  border: 4px solid white;
+  border-radius: 25px;
+  box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.3);
+}
+
+.song__in__playli {
+  margin-top: 2em;
+}
+
+.song__in__playli div {
+  position: relative;
+}
+
+.song__in__playli div a {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.song__in__playli div a img {
+  width: 60px;
+  height: 60px;
+  border: none;
+}
+
+.song__in__playli div a:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.song__in__playli img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 215px;
+  border: 4px white solid;
+  border-radius: 23px;
+  box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.song__in__playli h5 {
+  width: 240px;
+  max-height: 3em;
+  font-weight: 400;
+  text-align: left;
+  overflow: hidden;
+  font-weight: 300;
+  color: #333;
+  padding-top: 0.7em;
+  font-size: 24px;
+}
+
+.song__in__playli h6 {
+  width: 240px;
+  max-height: 3em;
+  font-weight: 400;
+  text-align: left;
+  overflow: hidden;
+  font-weight: 300;
+  color: #333;
+  font-size: 20px;
+}
+
+.song__in__playli .que {
+  background: none;
+  border: none;
+  outline: none;
+  background-image: url("/icon/icon-karaoke-que.png");
+  padding-left: 3em;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: 5px 15px;
+}
+
+.song__container {
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @font-face {
   font-family: Main_Font;
   font-weight: 600;
@@ -1516,6 +1628,7 @@ body {
   width: 50px;
   height: 50px;
   border: none;
+  box-shadow: none;
 }
 
 .playli_slide div a:hover {

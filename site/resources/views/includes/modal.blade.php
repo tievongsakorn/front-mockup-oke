@@ -21,11 +21,6 @@
                         <label>Username</label>
                         <input type="email" class="form-control" placeholder="enter_email@example.com">
                     </div>
-                    {{-- <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" id="password" class="form-control password__input" placeholder="********">
-                        <span></span>
-                    </div> --}}
                     <label>Password</label>
                     <div class="input-group">
                     <input type="password" class="form-control " id="password" placeholder="********">
@@ -79,10 +74,10 @@
                 <img src="/icon/icon-information.png">
                 <h2>สิทธิพิเศษสำหรับลูกค้า 3BB เท่านั้น</h2>
                 <h4 class="OnlyTBB__askmore">สอบถามรายละเอียดเพิ่มเติมที่</h4>
-                <h4 class="Tbb__callcenter" >Call center 3BB โทร 1530</h4>
+                <h4 class="Tbb__callcenter">Call center 3BB โทร 1530</h4>
                 <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
             </div>
-      </div>
+        </div>
     </div>
 </div>
 
@@ -100,6 +95,6 @@
                 <button class="btn btn-primary btn-block" data-dismiss="modal">ตกลง</button>
                 <button class="login__close--btn" data-dismiss="modal">ปิด</button>
             </div>
-      </div>
+        </div>
     </div>
 </div>

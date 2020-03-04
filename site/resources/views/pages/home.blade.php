@@ -32,6 +32,7 @@
         <h3 id="slide-title">
             ศิลปินแนะนำ
             <a href="#">
+            {{-- <i class="fa fa-chevron-circle-right" style="font-size:24px"></i> --}}
             <img src="icon/viewmore.png" width="34px" style="padding-left:15px; padding-bottom:5px;">
             </a>
         </h3>

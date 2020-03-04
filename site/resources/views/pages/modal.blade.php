@@ -4,7 +4,7 @@
 <div class="container" style="padding-top: 100px;">
     <div class="row box__package">
         <div class="col-12 title__package" style="padding-bottom : 2em ; padding-top:2em ;">
-            <h1 style="text-align : center;">modal test</h1>
+            <h1 style="text-align : center;">modal lunch test</h1>
         </div>
         <div class="col-12" align="center">
             <div class="box__package--option">
