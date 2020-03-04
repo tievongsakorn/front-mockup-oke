@@ -14,7 +14,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-xl-2" style="margin-top:1em">
+            <div class="col-12 col-xl-3" style="margin-top:1em">
                 <h1>เพลงอะไรสักอย่างที่มันมีชื่อเพลย์ลิสต์ยาว ๆ .</h1>
             </div>
         </div>

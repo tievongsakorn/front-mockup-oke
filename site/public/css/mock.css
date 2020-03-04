@@ -1140,8 +1140,8 @@
 }
 
 .playlist__detail--pic .detail__pic--big img {
-  height: 430px;
-  width: 430px;
+  height: 400px;
+  width: 400px;
   border: 4px solid white;
   border-radius: 25px;
   box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.3);
@@ -1162,8 +1162,8 @@
 }
 
 .song__in__playli div a img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border: none;
 }
 
@@ -1178,7 +1178,7 @@
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 215px;
+  height: 180px;
   border: 4px white solid;
   border-radius: 23px;
   box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
@@ -1212,10 +1212,14 @@
   border: none;
   outline: none;
   background-image: url("/icon/icon-karaoke-que.png");
-  padding-left: 3em;
-  background-size: 35px;
+  padding-left: 2em;
+  background-size: 30px;
   background-repeat: no-repeat;
-  background-position: 5px 15px;
+  background-position: 0px 15px;
+}
+
+.song__in__playli .que h5 {
+  font-size: 1.2em;
 }
 
 .song__container {
