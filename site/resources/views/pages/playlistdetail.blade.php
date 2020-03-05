@@ -14,14 +14,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-xl-3" style="margin-top:1em">
-                <h1>เพลงอะไรสักอย่างที่มันมีชื่อเพลย์ลิสต์ยาว ๆ .</h1>
+            <div class="col-12 col-xl-3">
+                <div class="playlist__name">
+                    <h1>เพลงอะไรสักอย่าง ที่มันมีชื่อเพลย์ลิสต์ยาว ๆ .</h1>
+                </div>
+                <div class="row align-items-end">
+                    {{-- <a href="#" class="select-btn"> <img src="/icon/icon-addlist.png" height="25px" style="margin-bottom:2px"> เลือกเพลงทั้งหมด</a> --}}
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div class="col-10 song__container">
-    <div class="row row-cols-md-3 row-cols-lg-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5">
         <div class="col">
             <div class="song__in__playli">
                 <div>

@@ -31,6 +31,9 @@ Route::get('/playlist/num', function () {
 });
 
 
+Route::get('/search', function () {
+    return view('pages.search');
+});
 
 Route::get('/test' , function(){
     return view('pages.test');

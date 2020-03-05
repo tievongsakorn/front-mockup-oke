@@ -179,7 +179,7 @@
     <div class="nonebts__container" id="corousal-top">
         <h3 id="slide-title">
             เพลย์ลิสต์
-            <a href="#">
+            <a href="/playlist">
                 <img src="icon/viewmore.png" width="34px" style="padding-left:15px; padding-bottom:5px;">
             </a>  
         </h3>

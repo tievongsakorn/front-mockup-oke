@@ -1,7 +1,7 @@
 <div class="topnav">
     <a href="/"><img id="logo_img"src="/imgs/t_logo.png"></a>
     <div style="text-align:center;">
-        <form class="form__search" action="">
+        <form class="form__search" action="/search">
             <input type="text" id="form__search" placeholder="ค้นหาเพลง ศิลปิน อัลบัม และเพลย์ลิสต์">
         </form>
     </div>

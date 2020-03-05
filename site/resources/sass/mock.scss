@@ -44,8 +44,7 @@ $blue-col : #0dd4fb ;
 html {
     box-sizing: border-box;
     overflow-x: hidden;
-    height: 100%;
-    
+    height: 100%;   
 }
 body{
     height: 100%;
@@ -288,7 +287,6 @@ body{
                 height: 50px; 
                 border: none;
             }
-            
         }
         a:hover{
             transition: all 0.2s;
@@ -430,7 +428,6 @@ body{
 }
 //ส่วนบาร์CoppyRightล่างสุดของเว็บ
 .footer__copyright {
-
     bottom: 0;
     border-top: 1px solid rgba(4,4,4,0.3);
     background-color: #006afe;
@@ -596,7 +593,6 @@ body{
                     border: none;
                 }
             }
-            
         }
         img {
             width: 200px;
@@ -622,7 +618,6 @@ body{
                     border: none;
                 }
             }
-            
         }
         img {
             width: 135px;
@@ -646,7 +641,6 @@ body{
                     border: none;
                 }
             }
-            
         }
         img {
             width: 200px;

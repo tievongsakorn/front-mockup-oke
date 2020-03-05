@@ -1112,12 +1112,62 @@
   }
 }
 
-.playlist__all--page {
-  padding-top: 7em;
+.all__playli--container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.playlist__all--page .playli_slide {
-  margin: 0;
+.playlist__all--page {
+  padding-top: 1em;
+}
+
+.playlist__all--page h1 {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.playlist__all--page .playli__all div {
+  position: relative;
+}
+
+.playlist__all--page .playli__all div a {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.playlist__all--page .playli__all div a img {
+  width: 50px;
+  height: 50px;
+  border: none;
+  box-shadow: none;
+}
+
+.playlist__all--page .playli__all div a:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.playlist__all--page .playli__all img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 290px;
+  height: 290px;
+  border: 4px white solid;
+  border-radius: 15px;
+  box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.playlist__all--page .playli__all h5 {
+  margin: 1em 0em 1em 0.2em;
+  width: 250px;
+  max-height: 4rem;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: left;
+  overflow: hidden;
 }
 
 .pic__playli--container {
@@ -1128,20 +1178,26 @@
   margin-bottom: 1em;
 }
 
+.playlist__name h1 {
+  color: #000000a8;
+  line-height: 1.5em;
+  overflow: hidden;
+}
+
 .playlist__detail--pic {
   padding-top: 7em;
   background-color: white;
-  box-shadow: 3px 3px 5px -1px white;
-  height: 650px;
+  box-shadow: 3px 3px 5px 0px white;
+  height: 590px;
 }
 
 .playlist__detail--pic .detail__pic--big {
-  margin-left: 3em;
+  margin-left: 2.5em;
 }
 
 .playlist__detail--pic .detail__pic--big img {
-  height: 400px;
-  width: 400px;
+  height: 370px;
+  width: 370px;
   border: 4px solid white;
   border-radius: 25px;
   box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.3);
@@ -1212,10 +1268,10 @@
   border: none;
   outline: none;
   background-image: url("/icon/icon-karaoke-que.png");
-  padding-left: 2em;
+  padding-left: 2.5em;
   background-size: 30px;
   background-repeat: no-repeat;
-  background-position: 0px 15px;
+  background-position: 0em 0.8em;
 }
 
 .song__in__playli .que h5 {
@@ -1226,6 +1282,39 @@
   margin-top: 1em;
   margin-left: auto;
   margin-right: auto;
+}
+
+.art__search {
+  text-align: center;
+}
+
+.art__search img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  height: 100px;
+}
+
+.art__search .img__circle {
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 6;
+  width: 200px;
+  height: 200px;
+  border: 4px solid white;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+.art__search h5 {
+  width: 100%;
+  overflow: hidden;
+  font-weight: 300;
+  color: #333;
+  padding-top: 1em;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 @font-face {

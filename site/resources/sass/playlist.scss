@@ -1,7 +1,49 @@
+.all__playli--container {
+    margin-left: auto;
+    margin-right: auto;
+}
 .playlist__all--page {
-    padding-top: 7em;
-    .playli_slide {
-        margin: 0;
+    padding-top: 1em;
+    h1 {
+        margin-top: 3em;
+        margin-bottom: 1em;
+    }
+    .playli__all {
+        div {
+            position: relative;
+            a {
+                position: absolute; 
+                bottom: 15px; 
+                right: 15px;
+                img {
+                    width: 50px; 
+                    height: 50px; 
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+            a:hover{
+                transition: all 0.2s;
+                transform: scale(1.1);
+            }
+        }
+        img {
+            object-fit: cover;
+            width: 290px;
+            height: 290px;
+            border: 4px white solid;
+            border-radius: 15px;
+            box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
+        }
+        h5 {
+            margin: 1em 0em 1em 0.2em;
+            width: 250px;
+            max-height: 4rem;
+            font-weight: 400;
+            font-size: 1.5em;
+            text-align: left;
+            overflow: hidden;
+        };
     }
 }
 .pic__playli--container {
@@ -10,17 +52,23 @@
         margin-bottom: 1em;
     }
 }
-
+.playlist__name {
+    h1 {
+        color: #000000a8;
+        line-height: 1.5em;
+        overflow: hidden;
+    }
+}
 .playlist__detail--pic {
     padding-top:7em;
     background-color: white;
-    box-shadow: 3px 3px 5px -1px white;
-    height: 650px;
+    box-shadow: 3px 3px 5px 0px white;
+    height: 590px;
     .detail__pic--big {
-        margin-left: 3em;
+        margin-left: 2.5em;
         img {
-            height: 400px;
-            width: 400px;
+            height: 370px;
+            width: 370px;
             border: 4px solid white;
             border-radius: 25px;
             box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.3);
@@ -41,7 +89,6 @@
                 height: 50px; 
                 border: none;
             }
-            
         }
         a:hover{
             transition: all 0.2s;
@@ -82,10 +129,10 @@
         border: none;
         outline: none;
         background-image: url('/icon/icon-karaoke-que.png');
-        padding-left: 2em;
+        padding-left: 2.5em;
         background-size: 30px;
         background-repeat: no-repeat;
-        background-position: 0px 15px;
+        background-position: 0em 0.8em;;
         h5 {
             font-size: 1.2em;
         }
@@ -96,4 +143,32 @@
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
+}
+
+.art__search {
+    text-align: center;
+    img {
+        object-fit: cover;
+        width: auto;
+        height: 100px;
+    }
+    .img__circle {
+        object-fit: cover;
+        z-index: 6;
+        width: 200px;
+        height: 200px;
+        border: 4px solid white;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 2px 1px 3px 0px rgba(0, 0, 0, 0.4);
+    }
+    h5{
+        width: 100%;
+        overflow: hidden;
+        font-weight: 300;
+        color: #333;
+        padding-top: 1em;
+        text-align: center;
+        font-size: 1.5em;
+    }
 }
