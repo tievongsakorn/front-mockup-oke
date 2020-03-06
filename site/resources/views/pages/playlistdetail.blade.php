@@ -16,7 +16,7 @@
             </div>
             <div class="col-12 col-xl-3">
                 <div class="playlist__name">
-                    <h1>เพลงอะไรสักอย่าง ที่มันมีชื่อเพลย์ลิสต์ยาว ๆ .</h1>
+                    <h1>เพลงอะไรสักอย่าง ที่มันมีชื่อเพลย์ลิสต์ยาว ๆ</h1>
                 </div>
                 <div class="row align-items-end">
                     {{-- <a href="#" class="select-btn"> <img src="/icon/icon-addlist.png" height="25px" style="margin-bottom:2px"> เลือกเพลงทั้งหมด</a> --}}

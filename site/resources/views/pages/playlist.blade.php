@@ -4,7 +4,7 @@
     <div class="all__playli--container col-12 col-md-10">
         <div class="playlist__all--page">
         <h1>เพลย์ลิสต์</h1>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-5">
+        <div class="row row-cols-2 row-cols-md-2 row-cols-xl-5">
             <div class="col">
                 <div class="playli__all">
                     <div>   
